@@ -518,8 +518,7 @@ button
 {
     .btn-dark:hover
     {
-        background: #EAEAEA;
-        color: #121212;
+        background: #353535;
     }
 }
 
@@ -1385,7 +1384,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	top: 15px;
 	right: 15px;
 	background: transparent;
-    color: #fff;
+    color: #1C1C1C;
 	width: 30px;
 	height: 30px;
 	border-radius: 0;
@@ -1397,7 +1396,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
     .fancybox__slide .f-button[data-fancybox-close]:hover
     {
-        color: #6AA589;
+        color: #777;
     }
 
 	._top-modal .fancybox__slide .f-button[data-fancybox-close]:hover{
@@ -2288,19 +2287,15 @@ input[type=checkbox]:checked + .checkbox-btn__text
     flex-wrap: wrap;
     width: 35px;
     height: 35px;
-    border-radius: 50%;
-    background: #1C1C1C;
+
+	position: relative;
 }
 
-.product-info__btn.product-share
+.product-info__btn .product__favorite
 {
-	background: none;
-}
-
-.product-info__btn svg 
-{
-    display: block;
-    fill: none;
+	top: 0;
+	right: 0;
+	opacity: 1;
 }
 
 .product-info__btn.product-share svg 
@@ -2308,37 +2303,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
     width: 18px;
     height: 20px;
 	stroke: #C7C3BC;
+	fill: none;
 	transition: stroke .2s linear;
-}
-
-.product-info__btn.product-favorite svg 
-{
-    width: 16px;
-    height: 14px;
-	stroke: #C7C3BC;
-	transition: stroke .2s linear;
-}
-
-.product-favorite 
-{
-    position: relative;
-}
-
-.product-favorite::before 
-{
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: url(../images/favorite_a.svg) 50% no-repeat;
-    transition: opacity .2s linear;
-}
-
-.product-favorite._active::before
-{
-    opacity: 1;
 }
 
 
@@ -2348,11 +2314,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	{
         stroke: #1C1C1C;
     }
-
-	.product-favorite:hover svg
-	{
-		stroke: #fff;
-	}
 }
 
 .product-info__code
@@ -2374,6 +2335,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	align-items: center;
 	align-content: center;
+	margin-top: 28px;
 }
 
 .product-info__price
@@ -2414,6 +2376,9 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	position: relative;
 	padding-left: 23px;
+	padding-right: 12px;
+	font-size: 16px;
+	line-height: normal;
 }
 
 .product-info__bonus::before
@@ -2439,6 +2404,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
     vertical-align: middle;
 }
 
+.product-info__tooltip
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	width: 10px;
+	height: 10px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
 .tooltip__icon
 {
     position: absolute;
@@ -2452,21 +2433,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
     align-content: center;
     flex-wrap: wrap;
 
-    width: 16px;
-    height: 16px;
-}
-
-.product-bonus__tooltip__icon
-{
-    width: 20px;
-    height: 20px;
-    top: 9px;
-    left: 13px;
-}
-
-.profile-balance-info .tooltip__icon
-{
-    opacity: .4;
+    width: 10px;
+    height: 10px;
 }
 
 .tooltip__icon img
@@ -2583,6 +2551,137 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	pointer-events: auto;
 }
 
+
+.product-info__colors
+{
+	margin-top: 26px;
+}
+
+.product-info__title
+{
+	line-height: normal;
+}
+
+.product-info__colors-flex
+{
+	margin: 4px 0 0 -10px;
+}
+
+.product-info__color
+{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-left: 10px;
+	flex-shrink: 0;
+	position: relative;
+}
+
+.product-info__color._active::before
+{
+	position: absolute;
+	content: '';
+	top: -4px;
+	left: -4px;
+
+	display: block;
+
+	width: calc(100% + 8px);
+	height: calc(100% + 8px);
+
+	background: #A49777;
+	border-radius: 50%;
+	opacity: .3;
+}
+
+.product-info__color img
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+
+.product-info__sizes
+{
+	margin-top: 22px;
+}
+
+.product-info__sizes-flex
+{
+	margin-left: -10px;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.radio-size
+{
+	margin: 10px 0 0 10px;
+}
+
+.radio-size__label
+{
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.radio-size__letter
+{
+	width: 30px;
+	height: 30px;
+	padding: 0 4px;
+	border: 1px solid #EAEAEA;
+	color: #1C1C1C;
+	line-height: 30px;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.radio-size__letter:hover
+	{
+		border-color: #1C1C1C;
+	}
+}
+
+.radio-size input[type=radio] 
+{
+    display: none;
+}
+
+input[type=radio]:checked + .radio-size__letter
+{
+	border-color: #1C1C1C;
+}
+
+
+.product-info__size-btn
+{
+	margin-top: 10px;
+	font-size: 11px;
+	line-height: normal;
+	color: #777777;
+	border-bottom: 1px solid #777777;
+	transition: color .2s linear, border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.product-info__size-btn:hover
+	{
+		color: #1C1C1C;
+		border-color: #1C1C1C;
+	}
+}
 /*------------
     footer
 ------------*/
@@ -2841,6 +2940,68 @@ input[type=checkbox]:checked + .checkbox-btn__text
     max-width: 100%;
     padding: 0;
 
-    border-radius: 20px;
     background: #FFF;
+}
+
+.modal-size
+{
+	width: 1034px;
+	padding: 60px 30px;
+}
+
+.modal-size__wrap
+{
+	max-width: 914px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.modal-size__title
+{
+	font-size: 16px;
+	line-height: normal;
+}
+
+.modal-size__table
+{
+	width: 100%;
+
+    border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.modal-size__table tr th
+{
+	padding: 16px 0 10px 16px;
+	border-top: 1px solid #EAEAEA;
+	font-size: 12px;
+	line-height: normal;
+	text-align: left;
+	font-weight: 400;
+}
+
+.modal-size__table tr th:first-child
+{
+	padding-left: 0;
+}
+
+.modal-size__table tr td
+{
+	padding: 20px 0 20px 16px;
+	border-top: 1px solid rgba(234, 234, 234, .8);
+	line-height: normal;
+	text-align: left;
+	color: #777777;
+	white-space: nowrap;
+}
+
+.modal-size__table tr:last-child td
+{
+	border-bottom: 1px solid rgba(234, 234, 234, .8);
+}
+
+.modal-size__table tr td span
+{
+	color: #1C1C1C;
+	text-transform: uppercase;
 }
