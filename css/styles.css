@@ -2196,7 +2196,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 /*------------
-    footer
+    commit
 ------------*/
 
 .product-info__cols
@@ -2582,6 +2582,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     opacity: 1;
 	pointer-events: auto;
 }
+
+/*------------
+    footer
+------------*/
 
 .footer__wrap
 {
