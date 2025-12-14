@@ -114,42 +114,127 @@
 
 				<section class="section-cart _marg">
 					<div class="cont">
-						<table class="cart-table">
-							<tbody>
-								<tr>
-									<td class="cart-table__thumb">
-										<a href="/" class="cart-table__img">
-											<img data-src="images/tmp/cart_product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-										</a>
-									</td>
-									<td class="cart-table__info">
-										<div class="cart-table__code">Артикул <span>2410949</span></div>
+						<div class="section-cart__flex _flex">
+							<button type="button" class="back-page">
+								<svg>
+									<use xlink:href="images/sprite.svg#arrow3"></use>
+								</svg>
 
-										<div class="cart-table__name">
-											<a href="/">Трикотажное платье мини с цветами</a>
+								назад
+							</button>
+
+							<div class="section-cart__coll">
+								<div class="main-title">Корзина</div>
+
+								<table class="cart-table">
+									<tbody>
+										<tr>
+											<td class="cart-table__thumb">
+												<a href="/" class="cart-table__img">
+													<img data-src="images/tmp/cart_product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+											</td>
+											<td class="cart-table__info">
+												<div class="cart-table__code">Артикул <span>2410949</span></div>
+
+												<div class="cart-table__name">
+													<a href="/">Трикотажное платье мини <br>с цветами</a>
+												</div>
+
+												<div class="cart-table__info-bot _flex">
+													<div class="cart-table__color">
+														<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+													</div>
+													<div class="cart-table__size">S</div>
+												</div>
+											</td>
+											<td class="cart-table__amount amount">
+												<div class="amount__val _flex">
+													<button type="button" class="amount__btn amount__btn_minus">
+														-
+													</button>
+
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
+
+													<button type="button" class="amount__btn amount__btn_plus">
+														+
+													</button>
+												</div>
+											</td>
+											<td class="cart-table__prices">
+												<div class="cart-table__btns _flex">	
+													<button class="cart-table__favorite js-favorite">
+														<svg>
+															<use xlink:href="images/sprite.svg#favorite"></use>
+														</svg>
+													</button>
+
+													<button class="cart-table__delete">
+														<svg>
+															<use xlink:href="images/sprite.svg#close"></use>
+														</svg>
+													</button>
+												</div>
+
+												<div class="cart-table__prices-box _flex">
+													<div class="cart-table__price">8 450 ₽</div>
+
+													<div class="cart-table__oldprice">11 450 ₽</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="section-cart__colr">
+								<div class="section-cart__imp">При заказе на сумму от 25 000 руб. доставка бесплатна</div>
+
+								<div class="cart-total">
+									<div class="cart-total__title">Сумма заказа</div>
+
+									<div class="cart-total__items">
+										<div class="cart-total__item _flex">
+											<div class="cart-total__item-name">2 товара</div>
+											<div class="cart-total__item-val">21 450 ₽</div>
 										</div>
-									</td>
-									<td>
-										<div class="amount product__amount">
-											<div class="amount__val _flex">
-												<button type="button" class="amount__btn amount__btn_minus"></button>
-
-												<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
-
-												<button type="button" class="amount__btn amount__btn_plus"></button>
-											</div>
+										<div class="cart-total__item _flex">
+											<div class="cart-total__item-name">Скидка</div>
+											<div class="cart-total__item-val">-11 450 ₽</div>
 										</div>
-									</td>
-									<td class="cart-table__prices">
-										<div class="cart-table__prices-box">
-											<div class="cart-table__price">8 450 ₽</div>
+									</div>
 
-											<div class="cart-table__old-price">11 450 ₽</div>
+									<div class="cart-total__line _flex">
+										<div class="cart-total__line-name">Итого</div>
+										<div class="cart-total__line-val">10 000 ₽</div>
+									</div>
+
+									<div class="wrap-btn">
+										<a href="/" class="btn-dark btn-dark_full cart-total__btn">Перейти к оформлению</a>
+									</div>
+
+									<form action="" class="form-promo">
+										<div class="form-promo__flex _flex">
+											<input type="text" value="" placeholder="Промокод" class="form-promo__input">
+
+											<button type="submit" class="btn-dark form-promo__submit">Применить</button>
 										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+									</form>
+								</div>
+
+								<div class="loyalty-program">
+									<div class="loyalty-program__title">Программа лояльности</div>
+
+									<form action="" class="form-promo">
+										<div class="form-promo__flex _flex">
+											<input type="text" value="" placeholder="0" class="form-promo__input">
+
+											<button type="submit" class="btn-dark form-promo__submit">Списать</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 			</div>
