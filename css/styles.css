@@ -2876,6 +2876,52 @@ input[type=radio]:checked + .radio-size__letter
 {
 	max-width: 600px;
 }
+
+
+.product-info__accord-item
+{
+	margin-top: 30px;
+}
+
+.product-info__accord-title
+{
+	position: relative;
+	cursor: pointer;
+	padding: 0 20px 8px 0;
+	border-bottom: 1px solid #EAEAEA;
+	font-size: 16px;
+	line-height: normal;
+}
+
+.product-info__accord-title::after
+{
+	position: absolute;
+	content: '';
+	top: 9px;
+	right: 5px;
+
+	display: block;
+
+	width: 4px;
+	height: 3px;
+
+	background: url(../images/ic_arrow.svg) 50% 50% no-repeat;
+}
+
+.product-info__accord-item._active .product-info__accord-title::after
+{
+	transform: rotate(-90deg);
+}
+
+.product-info__data
+{
+	padding-top: 15px;
+}
+
+.accord__data
+{
+    display: none;
+}
 /*------------
     footer
 ------------*/
