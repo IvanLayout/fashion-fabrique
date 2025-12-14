@@ -135,6 +135,17 @@ $(() => {
 			autoStart: false,
 		}
 	})
+
+
+	$('body').on('click', '.radio__label_del', function(e) {
+		let delivery = $(this).data('del')
+
+		$('.checkout-sector__item_del').removeClass('_show')
+
+		if ( $(delivery).length ) {
+			$(delivery).addClass('_show')
+		}
+	})
 })
 
 $(window).on('load', () => {
