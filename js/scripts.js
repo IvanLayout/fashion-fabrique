@@ -89,6 +89,71 @@ $(() => {
 		})
 	}
 
+	if ($('.products__slider-small').length) {
+		new Swiper('.products__slider-small', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 22,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 22,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 22,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 6,
+				},
+				'1300': {
+					spaceBetween: 20,
+					slidesPerView: 6,
+				},
+				'1440': {
+					spaceBetween: 28,
+					slidesPerView: 6,
+				},
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.product__box').height('auto')
+					setHeight($(swiper.el).find('.product__box'))
+
+					let posNav = $(swiper.el).find('.product__thumb').height()
+					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posNav)
+				},
+				resize: function (swiper) {
+					$(swiper.el).find('.product__box').height('auto')
+					setHeight($(swiper.el).find('.product__box'))
+
+					let posNav = $(swiper.el).find('.product__thumb').height()
+					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posNav)
+				}
+			}
+		})
+	}
+
 	$('.product__thumbs span').hover(function () {
 		let indexEl = $(this).data('index');
 		$(this).closest('.product__thumbs').find('span').removeClass('_active')

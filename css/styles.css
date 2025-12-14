@@ -1788,12 +1788,15 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 
-.products__slider{
+.products__slider,
+.products__slider-small{
 	margin-top: 30px;
 }
 
 .products__slider .slider-button-next,
-.products__slider .slider-button-prev{
+.products__slider .slider-button-prev,
+.products__slider-small .slider-button-next,
+.products__slider-small .slider-button-prev{
 	margin-top: -40px;
 }
 
@@ -1953,6 +1956,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	line-height: normal;
 }
 
+.products__slider-small .product__name
+{
+	font-size: 16px;
+}
+
 .product__name a{
 	color: currentColor;
 	text-decoration: none;
@@ -2003,6 +2011,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin-top: 10px;
 }
 
+.products__slider-small .product__price
+{
+	font-size: 14px;
+}
 
 .magazine__grid{
 	margin: 2px 0 0 -28px;
