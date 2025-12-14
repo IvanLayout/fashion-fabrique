@@ -42,12 +42,6 @@
 		<div class="wrap">
 			<!-- Шапка -->
 			<header class="header">
-				<div class="header__top">
-					<div class="cont">
-						<div class="header__top-info">Каждую пятницу — новые поступления и сюрпризы</div>
-					</div>
-				</div>
-
 				<div class="cont">
 					<div class="header__flex _flex">
 						<button type="button" class="mob-menu-btn">
@@ -131,6 +125,17 @@
 											<img data-src="images/tmp/product_img4.jpg" src="images/img_plug.png" alt="" class="lazyload">
 										</a>
 									</div>
+
+									<button type="button" class="slider-button-prev">
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow2"></use>
+										</svg>
+									</button>
+									<button type="button" class="slider-button-next">
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow2"></use>
+										</svg>
+									</button>
 								</div>
 							</div>
 
@@ -205,21 +210,8 @@
 										<div class="product-info__title">Выберите размер</div>
 
 										<div class="product-info__sizes-flex _flex">
-											<div class="radio-size">
-												<label class="radio-size__label">
-													<input type="radio" name="radio_size" checked>
-
-													<span class="radio-size__letter">S</span>
-												</label>
-											</div>
-
-											<div class="radio-size">
-												<label class="radio-size__label">
-													<input type="radio" name="radio_size">
-
-													<span class="radio-size__letter">M</span>
-												</label>
-											</div>
+											<a class="product-info__size _active">S</a>
+											<a href="/" class="product-info__size">M</a>
 										</div>
 
 										<button type="button" data-content="#modal-size" class="product-info__size-btn modal-btn">Таблица размеров</button>
