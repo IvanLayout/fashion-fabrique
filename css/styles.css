@@ -2561,6 +2561,76 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin-top: 30px;
 }
 
+.loyalty-program__title{
+	font-weight: 300;
+	font-size: 28px;
+	color: #121212;
+	line-height: normal;
+}
+
+.loyalty-program__info{
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	margin-top: 20px;
+}
+
+.loyalty-program__info-title{
+	font-size: 14px;
+	color: #3a3a3c;
+	line-height: normal;
+	margin-right: 11px;
+	flex-shrink: 0;
+	white-space: nowrap;
+}
+
+.loyalty-program__info-flex{
+	flex-wrap: nowrap;
+}
+
+.loyalty-program__info-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	flex-shrink: 0;
+}
+
+.loyalty-program__info-icon img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.loyalty-program__info-sum{
+	font-size: 16px;
+	color: #1c1c1c;
+	line-height: 20px;
+}
+
+.loyalty-program__info-imp{
+	width: 10px;
+	height: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	margin-top: -2px;
+	flex-shrink: 0;
+}
+
+.loyalty-program__info-imp svg{
+	display: block;
+	width: 10px;
+	height: 10px;
+	stroke: #777;
+}
+
 .loyalty-program .form-promo{
 	margin-top: 13px;
 }
