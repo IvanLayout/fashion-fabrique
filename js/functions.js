@@ -39,6 +39,21 @@ $(() => {
 		$('.header__wrap').removeClass('_show')
 	})
 
+	// Аккордион простой
+	$('body').on('click', '.accord__open', function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.accord__item')
+
+		if( parent.hasClass('_active') ) {
+			parent.removeClass('_active')
+			parent.find('.accord__data').slideUp(300)
+		} else {
+			parent.addClass('_active')
+			parent.find('.accord__data').slideDown(300)
+		}
+	})
+
 	// Аккордион
 	$('body').on('click', '.accordion__title', function(e) {
 		e.preventDefault()
