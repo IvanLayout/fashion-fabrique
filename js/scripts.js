@@ -12,6 +12,17 @@ $(() => {
 		}
 	})
 
+	// Добавление/Удаление (корзина)
+	$('body').on('click', '.cart-js', function (e) {
+		e.preventDefault()
+	
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+		} else {
+			$(this).addClass('_active')
+		}
+	})
+
 
 	if ($('.products__slider').length) {
 		new Swiper('.products__slider', {
