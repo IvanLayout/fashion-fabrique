@@ -4254,6 +4254,41 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	max-width: 394px;
 }
 
+
+.history-order__link + .history-order__link
+{
+	margin-left: 10px;
+}
+
+.history-order__link
+{
+	display: block;
+	text-decoration: none;
+	font-size: 28px;
+	line-height: 54px;
+	height: 56px;
+	color: #121212;
+	font-weight: 300;
+	border: 1px solid #EAEAEA;
+	padding-left: 29px;
+	padding-right: 29px;
+	text-align: center;
+	transition: border .2s linear;
+	min-width: 219px;
+}
+
+@media (any-hover: hover)
+{
+	.history-order__link:hover
+	{
+		border-color: #1C1C1C;
+	}
+}
+
+.history-order__link._active
+{
+	border-color: #1C1C1C;
+}
 /*------------
     footer
 ------------*/
