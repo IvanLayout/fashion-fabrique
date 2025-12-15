@@ -4017,6 +4017,34 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
 	color: #C57878;
 }
+
+.content-lk .form__line
+{
+	max-width: 286px;
+	margin-bottom: 20px;
+}
+
+.content-lk__form-agree .form__agree
+{
+	display: inline-block;
+}
+
+.content-lk__bot
+{
+	padding-top: 20px;
+	border-top: 1px solid #EAEAEA;
+}
+
+.form__submit-marg
+{
+	margin-top: 30px;
+}
+
+.form__submit-btn-w
+{
+	padding-left: 30px;
+	padding-right: 30px;
+}
 /*------------
     footer
 ------------*/
