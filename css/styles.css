@@ -4289,6 +4289,171 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
 	border-color: #1C1C1C;
 }
+
+
+.history-table
+{
+	width: 100%;
+
+    border-collapse: collapse;
+}
+
+.history-table tr th
+{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #EAEAEA;
+	text-align: left;
+	line-height: normal;
+	padding-left: 30px;
+}
+
+.history-table tr th:first-child
+{
+	padding-left: 0;
+}
+
+.history-table tr td
+{
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	border-bottom: 1px solid #EAEAEA;
+}
+
+.history-table tr td:first-child
+{
+	padding-left: 0;
+}
+
+.history-table__cod
+{
+	font-size: 16px;
+	line-height: normal;
+}
+
+.history-table__status
+{
+	margin-left: -10px;
+	flex-wrap: nowrap;
+}
+
+.history-table__status-item
+{
+	font-size: 12px;
+	line-height: 28px;
+	height: 30px;
+	white-space: nowrap;
+	color: #78C5C1;
+	padding-left: 12px;
+	padding-right: 12px;
+	border: 1px solid #78C5C1;
+
+	margin: 10px 0 0 10px;
+}
+
+.history-table__status-item._red
+{
+	color: #C57878;
+	border-color: #C57878;
+}
+
+.history-table__flex
+{
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.history-table__products-val
+{
+	width: 20px;
+	margin-right: 6px;
+	font-size: 16px;
+	line-height: normal;
+}
+
+.history-table__products-flex
+{
+	align-items: stretch;
+	align-content: stretch;
+	flex-wrap: nowrap;
+}
+
+.history-table__product
+{
+	display: block;
+	text-decoration: none;
+	margin-left: 10px;
+	width: calc(100%/5);
+	position: relative;
+}
+
+.history-table__product img 
+{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    object-fit: cover;
+}
+
+.history-table__product._empty
+{
+	border: 1px solid #EAEAEA;
+	padding: 10px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.history-table__product-remain
+{
+	font-size: 16px;
+	line-height: normal;
+}
+
+.history-table__more
+{
+	line-height: normal;
+	white-space: nowrap;
+}
+
+.history-table__more a
+{
+	text-decoration: none;
+	color: #121212;
+	border-bottom: 1px solid #121212;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.history-table__more a:hover
+	{
+		border-color: transparent;
+	}
+}
+
+.history-table__price
+{
+	white-space: nowrap;
+	font-size: 28px;
+	line-height: normal;
+}
+
+.history-table__buy
+{
+	white-space: nowrap;
+}
+
+.history-table__buy .btn-dark
+{
+	padding-left: 24px;
+	padding-right: 24px;
+}
 /*------------
     footer
 ------------*/
