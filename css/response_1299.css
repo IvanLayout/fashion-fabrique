@@ -1,6 +1,37 @@
 @media (max-width: 1299px)
 {
+	.header__list {
+		margin-left: 20px;
+	}
+		.header__list-item + .header__list-item {
+		margin-left: 20px;
+	}
+	.header__logo {
+		transform: translate(-25%, -50%);
+	}
 
+
+	.main-banner__title{
+		font-size: 50px;
+	}
+
+	.gift-card__box {
+		width: 33%;
+	}
+
+
+	.magazine__grid{
+		margin: 10px 0 0 -20px;
+	}
+
+	.magazine__item {
+		margin: 20px 0 0 20px;
+		width: calc(100% / 3 - 20px);
+	}
+
+	.main-title{
+		font-size: 32px;
+	}
 	/*------------
 		commit
 	------------*/

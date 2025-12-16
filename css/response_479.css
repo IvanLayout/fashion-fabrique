@@ -1,6 +1,118 @@
 @media (max-width: 479px)
 {
+	.main-banner__img {
+		object-position: 27% 0%;
+	}
 
+	.main-banner__info{
+		padding: 0 20px 40px;
+		align-items: flex-end;
+   		align-content: flex-end;
+	}
+
+	.main-banner__box{
+		width: 100%;
+		max-width: none;
+	}
+
+	.main-banner__title{
+		text-align: center;
+	}
+
+	.main-banner__bot{
+		text-align: center;
+	}
+
+
+	.products__slider,
+	.products__slider2,
+	.products__slider3{
+		overflow: visible;
+	}
+
+	.magazine__item {
+		width: calc(100% - 20px);
+	}
+
+	.magazine__name {
+		font-size: 30px;
+	}
+
+	.shops__slider{
+		overflow: visible;
+	}
+
+	.shops__slider .slider-button-prev,
+	.shops__slider .slider-button-next{
+		display: none;
+	}
+
+	.shop__name {
+		font-size: 30px;
+	}
+
+
+	.footer__items{
+		margin-left: 0;
+	}
+
+	.footer__item{
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.footer__item_last{
+		order: 2;
+	}
+
+	.footer__item_middle{
+		border-top: 1px solid #eaeaea;
+		padding-top: 39px;
+	}
+
+	.footer__item_big{
+		padding-bottom: 39px;
+		border-bottom: 1px solid #eaeaea;
+	}
+
+	.footer__qr-cod{
+		display: none;
+	}
+
+	.footer__download{
+		margin: -10px 0 0 -10px;
+	}
+
+	.footer__download-link{
+		margin: 10px 0 0 10px;
+	}
+
+	.footer__email{
+		font-size: 14px;
+	}
+
+	.footer_socials{
+		margin: 2px 0 0 -14px;
+	}
+
+	.socials-link{
+		width: 31px;
+		height: 31px;
+		margin: 14px 0 0 14px;
+	}
+
+	.socials-link img{
+		transform: scale(1.45);
+	}
+
+	.footer__details{
+		margin-top: 28px;
+	}
+
+	.footer__details-desc{
+		font-size: 16px;
+		margin-top: 10px;
+	}
 	/*------------
 		commit
 	------------*/

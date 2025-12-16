@@ -31,7 +31,7 @@
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/styles.css">
 
-		<link rel="stylesheet" href="css/response_1439.css" media="(max-width: 1439px)">
+		<link rel="stylesheet" href="css/response_1400.css" media="(max-width: 1400px)">
 		<link rel="stylesheet" href="css/response_1299.css" media="(max-width: 1299px)">
 		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
@@ -41,8 +41,7 @@
 	<body>
 		<div class="wrap">
 			<!-- Шапка -->
-			<header class="header">
-				<div class="header__top">
+			<header class="header"><div class="header__top">
 					<div class="cont">
 						<div class="header__top-info">Каждую пятницу — новые поступления и сюрпризы</div>
 					</div>
@@ -85,11 +84,13 @@
 
 						<div class="header__btns _flex">
 							<a href="/" class="header__btn">
+								<span class="header__btn-number">5</span>
 								<svg>
 									<use xlink:href="images/sprite.svg#card"></use>
 								</svg>
 							</a>
 							<a href="/" class="header__btn">
+								<span class="header__btn-number">2</span>
 								<svg>
 									<use xlink:href="images/sprite.svg#favorite"></use>
 								</svg>
@@ -103,6 +104,30 @@
 					</div>
 				</div>
 			</header>
+
+			<div class="btns-fix">
+				<a href="/" class="btns-fix__btn">
+					<svg>
+						<use xlink:href="images/sprite.svg#home"></use>
+					</svg>
+				</a>
+				<a href="/" class="btns-fix__btn">
+					<span class="btns-fix__btn-number">5</span>
+					<svg>
+						<use xlink:href="images/sprite.svg#card"></use>
+					</svg>
+				</a>
+				<a href="/" class="btns-fix__btn">
+					<svg>
+						<use xlink:href="images/sprite.svg#favorite"></use>
+					</svg>
+				</a>
+				<a href="/" class="btns-fix__btn">
+					<svg>
+						<use xlink:href="images/sprite.svg#user"></use>
+					</svg>
+				</a>
+			</div>
 			<!-- End Шапка -->
 
 			<div class="main">
@@ -112,7 +137,7 @@
 					<div class="main-banner__info">
 						<div class="cont">
 							<div class="main-banner__box">
-								<div class="main-banner__title">Новая коллекция ’25</div>
+								<div class="main-banner__title">Новая <span>коллекция ’25</span></div>
 
 								<div class="main-banner__bot">
 									<a href="/" class="main-banner__btn">
@@ -133,7 +158,7 @@
 					<div class="cont">
 						<div class="main-title">Новые поступления</div>
 
-						<div class="products__slider swiper">
+						<div class="products__slider2 swiper swiper_marg">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide product">
 									<button class="product__favorite js-favorite">
@@ -169,6 +194,9 @@
 										<div class="product__colors _flex">
 											<a href="/" class="product__color">
 												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
 											</a>
 											<a href="/" class="product__color">
 												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
@@ -552,7 +580,7 @@
 					<div class="cont">
 						<div class="main-title">Новые поступления</div>
 
-						<div class="products__slider swiper">
+						<div class="products__slider swiper swiper_marg">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide product">
 									<button class="product__favorite js-favorite">
@@ -919,7 +947,7 @@
 					<div class="cont">
 						<div class="main-title">Наши магазины</div>
 
-						<div class="shops__slider swiper">
+						<div class="shops__slider swiper swiper_marg">
 							<div class="swiper-wrapper">
 								<a href="/" class="swiper-slide shop">
 									<img data-src="images/tmp/shop1.jpg" src="images/img_plug.png" alt="" class="lazyload magazine__img">
@@ -984,6 +1012,7 @@
 					<div class="cont">
 						<div class="gift-card__wrap">
 							<img src="images/tmp/gift_cart.jpg" alt="" class="gift-card__img">
+							<img src="images/tmp/gift_cart_mob.jpg" alt="" class="gift-card__img _mob">
 
 							<div class="gift-card__info">
 								<div class="gift-card__box">
@@ -1009,6 +1038,10 @@
 
 			<footer class="footer _marg">
 				<div class="cont">
+					<div class="footer__logo">
+						<img src="images/logo.svg" alt="">
+					</div>
+
 					<div class="footer__wrap">
 						<div class="footer__wrap-width">
 							<div class="footer__items _flex">
@@ -1072,7 +1105,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="footer__item">
+								<div class="footer__item footer__item_big">
 									<div class="footer__title">Подпишитесь на новости</div>
 
 									<form action="" class="form-subscribe">
@@ -1093,7 +1126,7 @@
 										<button type="submit" class="form-subscribe__submit btn-dark">Подписаться</button>
 									</form>
 								</div>
-								<div class="footer__item">
+								<div class="footer__item footer__item_middle footer__item_last">
 									<div class="footer__title">Наше приложение</div>
 
 									<div class="footer__qr-cod">
@@ -1109,7 +1142,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="footer__item">
+								<div class="footer__item footer__item_middle">
 									<div class="footer__title">Поддержка</div>
 
 									<div class="footer__phone">

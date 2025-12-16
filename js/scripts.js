@@ -1,6 +1,14 @@
 // Ширина окна для ресайза
 WW = window.innerWidth || document.clientWidth || document.querySelector('body')[0].clientWidth
 
+// Моб. версия
+fakeResize = false
+fakeResize2 = true
+
+if (document.body.clientWidth < 375) {
+	document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+}
+
 $(() => {
 	$('body').on('click', '.js-favorite', function (e) {
 		e.preventDefault()
@@ -29,8 +37,8 @@ $(() => {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
-			spaceBetween: 15,
-			slidesPerView: 'auto',
+			spaceBetween: 10,
+			slidesPerView: 1,
 			preloadImages: false,
 			lazy: {
 				loadPrevNext: true,
@@ -46,23 +54,23 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 22,
-					slidesPerView: 'auto'
+					spaceBetween: 10,
+					slidesPerView: 1
 				},
 				'480': {
-					spaceBetween: 22,
-					slidesPerView: 'auto'
+					spaceBetween: 10,
+					slidesPerView: 2
 				},
 				'768': {
-					spaceBetween: 22,
-					slidesPerView: 'auto'
+					spaceBetween: 20,
+					slidesPerView: 3
 				},
 				'1024': {
 					spaceBetween: 20,
 					slidesPerView: 4,
 				},
 				'1300': {
-					spaceBetween: 20,
+					spaceBetween: 28,
 					slidesPerView: 4,
 				},
 				'1440': {
@@ -73,14 +81,18 @@ $(() => {
 			on: {
 				init: function (swiper) {
 					$(swiper.el).find('.product__box').height('auto')
+					$(swiper.el).find('.product__name').height('auto')
 					setHeight($(swiper.el).find('.product__box'))
+					setHeight($(swiper.el).find('.product__name'))
 
 					let posNav = $(swiper.el).find('.product__thumb').height()
 					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posNav)
 				},
 				resize: function (swiper) {
 					$(swiper.el).find('.product__box').height('auto')
+					$(swiper.el).find('.product__name').height('auto')
 					setHeight($(swiper.el).find('.product__box'))
+					setHeight($(swiper.el).find('.product__name'))
 
 					let posNav = $(swiper.el).find('.product__thumb').height()
 					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posNav)
@@ -89,13 +101,14 @@ $(() => {
 		})
 	}
 
-	if ($('.products__slider-small').length) {
-		new Swiper('.products__slider-small', {
+
+	if ($('.products__slider2').length) {
+		new Swiper('.products__slider2', {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
-			spaceBetween: 15,
-			slidesPerView: 'auto',
+			spaceBetween: 14,
+			slidesPerView: 2,
 			preloadImages: false,
 			lazy: {
 				loadPrevNext: true,
@@ -111,41 +124,114 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 22,
-					slidesPerView: 'auto'
+					spaceBetween: 14,
+					slidesPerView: 2
 				},
 				'480': {
-					spaceBetween: 22,
-					slidesPerView: 'auto'
+					spaceBetween: 10,
+					slidesPerView: 2
 				},
 				'768': {
-					spaceBetween: 22,
-					slidesPerView: 'auto'
+					spaceBetween: 20,
+					slidesPerView: 3
 				},
 				'1024': {
 					spaceBetween: 20,
-					slidesPerView: 6,
+					slidesPerView: 4
 				},
 				'1300': {
-					spaceBetween: 20,
-					slidesPerView: 6,
+					spaceBetween: 28,
+					slidesPerView: 4
 				},
 				'1440': {
 					spaceBetween: 28,
-					slidesPerView: 6,
+					slidesPerView: 4
 				},
 			},
 			on: {
 				init: function (swiper) {
 					$(swiper.el).find('.product__box').height('auto')
+					$(swiper.el).find('.product__name').height('auto')
 					setHeight($(swiper.el).find('.product__box'))
+					setHeight($(swiper.el).find('.product__name'))
 
 					let posNav = $(swiper.el).find('.product__thumb').height()
 					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posNav)
 				},
 				resize: function (swiper) {
 					$(swiper.el).find('.product__box').height('auto')
+					$(swiper.el).find('.product__name').height('auto')
 					setHeight($(swiper.el).find('.product__box'))
+					setHeight($(swiper.el).find('.product__name'))
+
+					let posNav = $(swiper.el).find('.product__thumb').height()
+					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posNav)
+				}
+			}
+		})
+	}
+
+	if ($('.products__slider3').length) {
+		new Swiper('.products__slider3', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 10,
+			slidesPerView: 2,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+					slidesPerView: 2
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 2
+				},
+				'768': {
+					spaceBetween: 20,
+					slidesPerView: 3
+				},
+				'1024': {
+					spaceBetween: 28,
+					slidesPerView: 4
+				},
+				'1300': {
+					spaceBetween: 28,
+					slidesPerView: 5
+				},
+				'1440': {
+					spaceBetween: 28,
+					slidesPerView: 6
+				},
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.product__box').height('auto')
+					$(swiper.el).find('.product__name').height('auto')
+					setHeight($(swiper.el).find('.product__box'))
+					setHeight($(swiper.el).find('.product__name'))
+
+					let posNav = $(swiper.el).find('.product__thumb').height()
+					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posNav)
+				},
+				resize: function (swiper) {
+					$(swiper.el).find('.product__box').height('auto')
+					$(swiper.el).find('.product__name').height('auto')
+					setHeight($(swiper.el).find('.product__box'))
+					setHeight($(swiper.el).find('.product__name'))
 
 					let posNav = $(swiper.el).find('.product__thumb').height()
 					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posNav)
@@ -168,8 +254,8 @@ $(() => {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
-			spaceBetween: 15,
-			slidesPerView: 'auto',
+			spaceBetween: 10,
+			slidesPerView: 1,
 			preloadImages: false,
 			lazy: {
 				loadPrevNext: true,
@@ -185,24 +271,24 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 22,
-					slidesPerView: 'auto'
+					spaceBetween: 10,
+					slidesPerView: 1
 				},
 				'480': {
-					spaceBetween: 22,
-					slidesPerView: 'auto'
+					spaceBetween: 10,
+					slidesPerView: 2
 				},
 				'768': {
-					spaceBetween: 22,
-					slidesPerView: 'auto'
+					spaceBetween: 20,
+					slidesPerView: 3
 				},
 				'1024': {
 					spaceBetween: 20,
-					slidesPerView: 4,
+					slidesPerView: 3,
 				},
 				'1300': {
-					spaceBetween: 20,
-					slidesPerView: 4,
+					spaceBetween: 28,
+					slidesPerView: 3,
 				},
 				'1440': {
 					spaceBetween: 28,
@@ -265,6 +351,30 @@ $(window).on('load', () => {
 });
 
 $(window).on('resize', () => {
+	let windowW = window.outerWidth
+
+	if (typeof WW !== 'undefined' && WW != windowW) {
+		// Перезапись ширины окна
+		WW = window.innerWidth || document.clientWidth || document.querySelector('body')[0].clientWidth
+
+		// Моб. версия
+		if (!fakeResize) {
+			fakeResize = true
+			fakeResize2 = false
+
+			document.getElementsByTagName('meta')['viewport'].content = 'width=device-width, initial-scale=1, maximum-scale=1'
+		}
+
+		if (!fakeResize2) {
+			fakeResize2 = true
+
+			if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+		} else {
+			fakeResize = false
+			fakeResize2 = true
+		}
+	}
+
 	if ($('.application__slider').length){
 		applicationSlider()
 	}

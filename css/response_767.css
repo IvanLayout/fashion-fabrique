@@ -1,6 +1,128 @@
 @media (max-width: 767px)
 {
+	.header__top-info {
+		font-size: 10px;
+		padding: 9px 0;
+	}
 
+
+	._marg {
+		margin-top: 40px;
+	}
+
+
+	.main-banner__box {
+		width: 60%;
+	}
+
+	.magazine__item {
+		width: calc(100% / 2 - 20px);
+	}
+
+
+	.magazine__name {
+		font-size: 22px;
+	}
+	
+
+	.shop__name {
+		font-size: 22px;
+	}
+
+
+	.gift-card__img{
+		min-height: 580px;
+	}
+
+	.gift-card__info{
+		align-items: flex-end;
+		align-content: flex-end;
+	}
+
+	.gift-card__box{
+		width: 100%;
+		max-width: none;
+	}
+
+	.gift-card__img{
+		display: none;
+	}
+
+	.gift-card__img._mob{
+		display: block;
+		object-position: 0 50%;
+	}
+
+
+	.footer__bot{
+		padding-top: 42px;
+		padding-bottom: 42px;
+	}
+
+	.footer__bot-link{
+		width: 100%;
+	}
+
+	.footer__bot-link + .footer__bot-link{
+		margin: 20px 0 0;
+	}
+
+	.footer__bot-link a{
+		border-bottom-color: currentColor;
+	}
+
+	.footer__copy{
+		width: 100%;
+		order: 2;
+		margin-top: 35px;
+	}
+
+	.footer__logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		padding: 23px 20px 20px;
+		border-top: 1px solid #EAEAEA;
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.footer__logo img{
+		width: 280px;
+		display: block;
+	}
+
+	.footer__wrap{
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+		padding: 0 20px 47px;
+	}
+
+	.footer__items{
+		margin: 0 0 0 -20px;
+	}
+
+	.footer__item{
+		width: calc(100%/3 - 20px);
+		margin: 40px 0 0 20px;
+	}
+
+	.footer__item_big{
+		order: -1;
+		width: calc(100% - 20px);
+	}
+
+	.footer__item_middle{
+		width: calc(100%/2 - 20px);
+	}
+
+	.footer .checkbox__text br{
+		display: inline;
+	}
 	/*------------
 		commit
 	------------*/

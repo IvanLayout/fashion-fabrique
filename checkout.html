@@ -32,7 +32,7 @@
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/styles.css">
 
-		<link rel="stylesheet" href="css/response_1439.css" media="(max-width: 1439px)">
+		<link rel="stylesheet" href="css/response_1400.css" media="(max-width: 1400px)">
 		<link rel="stylesheet" href="css/response_1299.css" media="(max-width: 1299px)">
 		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
@@ -43,12 +43,6 @@
 		<div class="wrap">
 			<!-- Шапка -->
 			<header class="header">
-				<div class="header__top">
-					<div class="cont">
-						<div class="header__top-info">Каждую пятницу — новые поступления и сюрпризы</div>
-					</div>
-				</div>
-
 				<div class="cont">
 					<div class="header__flex _flex">
 						<button type="button" class="mob-menu-btn">
@@ -86,11 +80,13 @@
 
 						<div class="header__btns _flex">
 							<a href="/" class="header__btn">
+								<span class="header__btn-number">5</span>
 								<svg>
 									<use xlink:href="images/sprite.svg#card"></use>
 								</svg>
 							</a>
 							<a href="/" class="header__btn">
+								<span class="header__btn-number">2</span>
 								<svg>
 									<use xlink:href="images/sprite.svg#favorite"></use>
 								</svg>
@@ -104,6 +100,30 @@
 					</div>
 				</div>
 			</header>
+
+			<div class="btns-fix">
+				<a href="/" class="btns-fix__btn">
+					<svg>
+						<use xlink:href="images/sprite.svg#home"></use>
+					</svg>
+				</a>
+				<a href="/" class="btns-fix__btn">
+					<span class="btns-fix__btn-number">5</span>
+					<svg>
+						<use xlink:href="images/sprite.svg#card"></use>
+					</svg>
+				</a>
+				<a href="/" class="btns-fix__btn">
+					<svg>
+						<use xlink:href="images/sprite.svg#favorite"></use>
+					</svg>
+				</a>
+				<a href="/" class="btns-fix__btn">
+					<svg>
+						<use xlink:href="images/sprite.svg#user"></use>
+					</svg>
+				</a>
+			</div>
 			<!-- End Шапка -->
 
 			<div class="main">
@@ -607,6 +627,10 @@
 
 			<footer class="footer _marg">
 				<div class="cont">
+					<div class="footer__logo">
+						<img src="images/logo.svg" alt="">
+					</div>
+
 					<div class="footer__wrap">
 						<div class="footer__wrap-width">
 							<div class="footer__items _flex">
@@ -670,7 +694,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="footer__item">
+								<div class="footer__item footer__item_big">
 									<div class="footer__title">Подпишитесь на новости</div>
 
 									<form action="" class="form-subscribe">
@@ -691,7 +715,7 @@
 										<button type="submit" class="form-subscribe__submit btn-dark">Подписаться</button>
 									</form>
 								</div>
-								<div class="footer__item">
+								<div class="footer__item footer__item_middle footer__item_last">
 									<div class="footer__title">Наше приложение</div>
 
 									<div class="footer__qr-cod">
@@ -707,7 +731,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="footer__item">
+								<div class="footer__item footer__item_middle">
 									<div class="footer__title">Поддержка</div>
 
 									<div class="footer__phone">

@@ -31,7 +31,7 @@
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/styles.css">
 
-		<link rel="stylesheet" href="css/response_1439.css" media="(max-width: 1439px)">
+		<link rel="stylesheet" href="css/response_1400.css" media="(max-width: 1400px)">
 		<link rel="stylesheet" href="css/response_1299.css" media="(max-width: 1299px)">
 		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
@@ -79,11 +79,13 @@
 
 						<div class="header__btns _flex">
 							<a href="/" class="header__btn">
+								<span class="header__btn-number">5</span>
 								<svg>
 									<use xlink:href="images/sprite.svg#card"></use>
 								</svg>
 							</a>
 							<a href="/" class="header__btn">
+								<span class="header__btn-number">2</span>
 								<svg>
 									<use xlink:href="images/sprite.svg#favorite"></use>
 								</svg>
@@ -97,6 +99,30 @@
 					</div>
 				</div>
 			</header>
+
+			<div class="btns-fix">
+				<a href="/" class="btns-fix__btn">
+					<svg>
+						<use xlink:href="images/sprite.svg#home"></use>
+					</svg>
+				</a>
+				<a href="/" class="btns-fix__btn">
+					<span class="btns-fix__btn-number">5</span>
+					<svg>
+						<use xlink:href="images/sprite.svg#card"></use>
+					</svg>
+				</a>
+				<a href="/" class="btns-fix__btn">
+					<svg>
+						<use xlink:href="images/sprite.svg#favorite"></use>
+					</svg>
+				</a>
+				<a href="/" class="btns-fix__btn">
+					<svg>
+						<use xlink:href="images/sprite.svg#user"></use>
+					</svg>
+				</a>
+			</div>
 			<!-- End Шапка -->
 
 			<div class="main">
@@ -318,7 +344,7 @@
 					<div class="cont">
 						<div class="main-title">Дополните образ</div>
 
-						<div class="products__slider swiper">
+						<div class="products__slider2 swiper swiper_marg">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide product">
 									<button class="product__favorite js-favorite">
@@ -349,15 +375,6 @@
 									<div class="product__box _flex">
 										<div class="product__name">
 											<a href="/">Серьги</a>
-										</div>
-
-										<div class="product__colors _flex">
-											<a href="/" class="product__color">
-												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</a>
-											<a href="/" class="product__color">
-												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</a>
 										</div>
 									</div>
 
@@ -393,15 +410,6 @@
 										<div class="product__name">
 											<a href="/">Браслет-кафф с ромашкой</a>
 										</div>
-
-										<div class="product__colors _flex">
-											<a href="/" class="product__color">
-												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</a>
-											<a href="/" class="product__color">
-												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</a>
-										</div>
 									</div>
 
 									<div class="product__price">1 800 ₽</div>
@@ -426,7 +434,7 @@
 					<div class="cont">
 						<div class="main-title">Вам может понравиться</div>
 
-						<div class="products__slider swiper">
+						<div class="products__slider2 swiper swiper_marg">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide product">
 									<button class="product__favorite js-favorite">
@@ -792,7 +800,7 @@
 					<div class="cont">
 						<div class="main-title">Вы смотрели</div>
 
-						<div class="products__slider-small swiper">
+						<div class="products__slider3 swiper swiper_marg">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide product">
 									<button class="product__favorite js-favorite">
@@ -1330,6 +1338,10 @@
 
 			<footer class="footer _marg">
 				<div class="cont">
+					<div class="footer__logo">
+						<img src="images/logo.svg" alt="">
+					</div>
+
 					<div class="footer__wrap">
 						<div class="footer__wrap-width">
 							<div class="footer__items _flex">
@@ -1393,7 +1405,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="footer__item">
+								<div class="footer__item footer__item_big">
 									<div class="footer__title">Подпишитесь на новости</div>
 
 									<form action="" class="form-subscribe">
@@ -1414,7 +1426,7 @@
 										<button type="submit" class="form-subscribe__submit btn-dark">Подписаться</button>
 									</form>
 								</div>
-								<div class="footer__item">
+								<div class="footer__item footer__item_middle footer__item_last">
 									<div class="footer__title">Наше приложение</div>
 
 									<div class="footer__qr-cod">
@@ -1430,7 +1442,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="footer__item">
+								<div class="footer__item footer__item_middle">
 									<div class="footer__title">Поддержка</div>
 
 									<div class="footer__phone">

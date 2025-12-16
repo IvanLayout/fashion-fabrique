@@ -1,6 +1,243 @@
 @media (max-width: 1023px)
 {
+	.header__list{
+		display: none;
+	}
 
+	.header__logo {
+		transform: translate(-50%, -50%);
+	}
+
+	.header__logo img{
+		min-height: 18px;
+	}
+
+	.header__btns{
+		display: none;
+	}
+
+
+	.btns-fix{
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 90;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: nowrap;
+		background: #fff;
+		border-top: 1px solid #EAEAEA;
+		padding: 5px 46px 6px;
+	}
+
+	.btns-fix__btn{
+		width: 48px;
+		height: 36px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		color: #121212;
+		position: relative;
+	}
+
+	.btns-fix__btn svg{
+		display: block;
+		width: 20px;
+		height: 20px;
+		stroke: currentColor;
+		fill: none;
+	}
+
+	.btns-fix__btn-number{
+		position: absolute;
+		right: 6px;
+		top: 2px;
+		min-width: 18px;
+		border-radius: 9px;
+		font-size: 12px;
+		color: #e8e6e2;
+		line-height: 18px;
+		text-align: center;
+		padding: 0 2px;
+		background: #1C1C1C;
+	}
+
+
+	.wrap{
+		padding-bottom: 48px;
+	}
+
+	._marg{
+		margin-top: 50px;
+	}
+
+	.main-title{
+		font-size: 30px;
+	}
+
+
+	.main-banner::after{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: radial-gradient(50% 50% at 50% 50%, rgba(18, 17, 17, 0) 0.96%, rgba(18, 17, 17, 0.3) 44.23%, #121111 100%);
+		opacity: .15;
+	}
+
+	.main-banner__info{
+		padding-bottom: 140px;
+		z-index: 1;
+	}
+
+	.main-banner__box{
+		width: 50%;
+	}
+
+	.main-banner__title {
+		font-size: 40px;
+	}
+
+	.main-banner__img {
+		object-position: 62% 0%;
+		min-height: 460px;
+	}
+
+
+	.magazine__grid{
+		margin-top: 0;
+	}
+
+	.magazine__item::after{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(180deg, rgba(74, 74, 74, 0.2) 0%, rgba(74, 74, 74, 0.2) 100%);
+	}
+
+	.magazine__info {
+		padding: 0 20px 20px;
+		z-index: 1;
+	}
+
+	.magazine__name {
+		font-size: 26px;
+	}
+
+	.magazine__more{
+		display: none;
+	}
+
+	.swiper_marg{
+		margin-top: 20px;
+	}
+
+
+	.shop::after{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(180deg, rgba(74, 74, 74, 0.2) 0%, rgba(74, 74, 74, 0.2) 100%);
+	}
+
+	.shop__info {
+		padding: 0 20px 20px;
+		z-index: 1;
+	}
+
+	.shop__name {
+		font-size: 26px;
+	}
+
+	.shop__more{
+		display: none;
+	}
+
+
+	.slider-button-prev, .slider-button-next{
+		width: 48px;
+		height: 38px;
+	}
+
+	.products__slider .slider-button-next,
+	.products__slider .slider-button-prev,
+	.products__slider3 .slider-button-next,
+	.products__slider3 .slider-button-prev {
+		margin-top: -34px;
+	}
+
+	.product__box{
+		margin-top: 20px;
+	}
+
+	.product__colors{
+		display: none;
+	}
+
+	.product__thumbs{
+		display: none;
+	}
+
+	.product__favorite{
+		display: none;
+	}
+
+	.products__slider3 .product__name{
+		font-size: 18px;
+	}
+
+	.products__slider3 .product__price{
+		font-size: 18px;
+	}
+
+	.product{
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+
+	.gift-card__info{
+		padding: 20px;
+	}
+
+	.gift-card__title {
+		font-size: 30px;
+	}
+
+	.gift-card__subtitle {
+		font-size: 20px;
+	}
+
+
+	.footer__bot-link + .footer__bot-link {
+		margin-left: 20px;
+	}
+
+
+	.footer__title{
+		font-size: 24px;
+	}
+
+	.footer .checkbox__text br{
+		display: none;
+	}
+
+	.footer__phone{
+		font-size: 24px;
+	}
 	/*------------
 		commit
 	------------*/
