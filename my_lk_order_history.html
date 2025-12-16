@@ -31,7 +31,7 @@
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/styles.css">
 
-		<link rel="stylesheet" href="css/response_1400.css" media="(max-width: 1400px)">
+		<link rel="stylesheet" href="css/response_1439.css" media="(max-width: 1439px)">
 		<link rel="stylesheet" href="css/response_1299.css" media="(max-width: 1299px)">
 		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
@@ -79,13 +79,11 @@
 
 						<div class="header__btns _flex">
 							<a href="/" class="header__btn">
-								<span class="header__btn-number">5</span>
 								<svg>
 									<use xlink:href="images/sprite.svg#card"></use>
 								</svg>
 							</a>
 							<a href="/" class="header__btn">
-								<span class="header__btn-number">2</span>
 								<svg>
 									<use xlink:href="images/sprite.svg#favorite"></use>
 								</svg>
@@ -99,30 +97,6 @@
 					</div>
 				</div>
 			</header>
-
-			<div class="btns-fix">
-				<a href="/" class="btns-fix__btn">
-					<svg>
-						<use xlink:href="images/sprite.svg#home"></use>
-					</svg>
-				</a>
-				<a href="/" class="btns-fix__btn">
-					<span class="btns-fix__btn-number">5</span>
-					<svg>
-						<use xlink:href="images/sprite.svg#card"></use>
-					</svg>
-				</a>
-				<a href="/" class="btns-fix__btn">
-					<svg>
-						<use xlink:href="images/sprite.svg#favorite"></use>
-					</svg>
-				</a>
-				<a href="/" class="btns-fix__btn">
-					<svg>
-						<use xlink:href="images/sprite.svg#user"></use>
-					</svg>
-				</a>
-			</div>
 			<!-- End Шапка -->
 
 			<div class="main">
@@ -146,16 +120,16 @@
 										<a href="/" class="aside-lk__link">Личный данные</a>
 									</div>
 									<div class="aside-lk__item">
-										<a href="/" class="aside-lk__link">История заказов</a>
+										<a class="aside-lk__link _active">История заказов</a>
 									</div>
 									<div class="aside-lk__item">
-										<a href="/" class="aside-lk__link">Избранные товары</a>
+										<a href="/" href="/" class="aside-lk__link">Избранные товары</a>
 									</div>
 									<div class="aside-lk__item">
 										<a href="/" class="aside-lk__link">Бонусная программа</a>
 									</div>
 									<div class="aside-lk__item">
-										<a class="aside-lk__link _active">УПРАВЛЕНИЕ ПОДПИСКАМИ</a>
+										<a href="/" class="aside-lk__link">УПРАВЛЕНИЕ ПОДПИСКАМИ</a>
 									</div>
 								</div>
 
@@ -166,47 +140,158 @@
 							
 							<div class="content-lk">
 								<div class="content-lk__top _flex">
-									<div class="content-lk__top-icon">
-										<img data-src="images/ic_lk5.svg" src="images/img_plug.png" alt="" class="lazyload">
-									</div>
+									<h1 class="main-title">История заказов</h1>
 
-									<h1 class="main-title">Управление подписками</h1>
+									<div class="content-lk__val-product">26 заказов</div>
 								</div>
 
-								<form action="" class="form">
-									<div class="form__line form__line-w">
-										<div class="form__label">E-mail</div>
+								<div class="history-order">
+									<div class="history-order__links _flex">
+										<a class="history-order__link _active">Активные</a>
 
-										<div class="form__filed">
-											<input type="email" value="" placeholder="Iva.A@gmail.com" class="form__input">
-										</div>
-									</div>
-									<div class="form__line form__line-w">
-										<div class="form__label">SMS</div>
-
-										<div class="form__filed">
-											<input type="tel" value="" placeholder="+7" data-mask="+7 (999) 999-99-99" class="form__input">
-										</div>
+										<a href="/" class="history-order__link">Завершенные</a>
 									</div>
 
-									<div class="content-lk__bot">
-										<div class="content-lk__form-agree">
-											<div class="checkbox form__agree">
-												<label class="checkbox__label">
-													<input type="checkbox" name="">
-	
-													<span class="checkbox__text">
-														нажимая кнопку вы соглашаетесь согласие <br>на <a href="/" target="_blank">обработку персональных данных</a>
-													</span>
-												</label>
-											</div>
-										</div>
+									<table class="history-table">
+										<thead>
+											<tr>
+												<th>Номер заказа</th>
+												<th>Количество товара</th>
+												<th></th>
+												<th>Сумма</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="history-table__number">
+													<div class="history-table__cod">№1223/A</div>
 
-										<div class="form__submit form__submit-marg">
-											<button type="submit" class="form__submit-btn-pad btn-dark">Сохранить изменения</button>
-										</div>
-									</div>
-								</form>
+													<div class="history-table__status _flex">
+														<div class="history-table__status-item">Принят, ожидается оплата</div>
+														<div class="history-table__status-item _red">Не оплачен</div>
+													</div>
+												</td>
+												<td class="history-table__products">
+													<div class="history-table__flex _flex">
+														<div class="history-table__products-val">4</div>
+
+														<div class="history-table__products-flex _flex">
+															<a href="/" class="history-table__product">
+																<img data-src="images/tmp/cart_product2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<a href="/" class="history-table__product">
+																<img data-src="images/tmp/cart_product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<a href="/" class="history-table__product">
+																<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<a href="/" class="history-table__product">
+																<img data-src="images/tmp/product4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="history-table__more">
+														<a href="/">Подробнее</a>
+													</div>
+												</td>
+												<td>
+													<div class="history-table__price">8 450 ₽</div>
+												</td>
+												<td class="history-table__btn">
+													<div class="history-table__buy">
+														<a href="/" class="btn-dark">Оплатить заказ</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="history-table__number">
+													<div class="history-table__cod">№1224/A</div>
+
+													<div class="history-table__status _flex">
+														<div class="history-table__status-item">Принят, ожидается оплата</div>
+														<div class="history-table__status-item _red">Не оплачен</div>
+													</div>
+												</td>
+												<td class="history-table__products">
+													<div class="history-table__flex _flex">
+														<div class="history-table__products-val">2</div>
+
+														<div class="history-table__products-flex _flex">
+															<a href="/" class="history-table__product">
+																<img data-src="images/tmp/cart_product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<a href="/" class="history-table__product">
+																<img data-src="images/tmp/product4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="history-table__more">
+														<a href="/">Подробнее</a>
+													</div>
+												</td>
+												<td>
+													<div class="history-table__price">4 250 ₽</div>
+												</td>
+												<td class="history-table__btn">
+													<div class="history-table__buy">
+														<a href="/" class="btn-dark">Оплатить заказ</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="history-table__number">
+													<div class="history-table__cod">№1225/A</div>
+
+													<div class="history-table__status _flex">
+														<div class="history-table__status-item">Принят, ожидается оплата</div>
+														<div class="history-table__status-item _red">Не оплачен</div>
+													</div>
+												</td>
+												<td class="history-table__products">
+													<div class="history-table__flex _flex">
+														<div class="history-table__products-val">6</div>
+
+														<div class="history-table__products-flex _flex">
+															<a href="/" class="history-table__product">
+																<img data-src="images/tmp/product7.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<a href="/" class="history-table__product">
+																<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<a href="/" class="history-table__product">
+																<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<a href="/" class="history-table__product">
+																<img data-src="images/tmp/product5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+															<div class="history-table__product _empty">
+																<div class="history-table__product-remain">+2</div>
+															</div>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="history-table__more">
+														<a href="/">Подробнее</a>
+													</div>
+												</td>
+												<td>
+													<div class="history-table__price">14 250 ₽</div>
+												</td>
+												<td class="history-table__btn">
+													<div class="history-table__buy">
+														<a href="/" class="btn-dark">Оплатить заказ</a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -216,10 +301,6 @@
 
 			<footer class="footer _marg">
 				<div class="cont">
-					<div class="footer__logo">
-						<img src="images/logo.svg" alt="">
-					</div>
-
 					<div class="footer__wrap">
 						<div class="footer__wrap-width">
 							<div class="footer__items _flex">
@@ -283,7 +364,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="footer__item footer__item_big">
+								<div class="footer__item">
 									<div class="footer__title">Подпишитесь на новости</div>
 
 									<form action="" class="form-subscribe">
@@ -304,7 +385,7 @@
 										<button type="submit" class="form-subscribe__submit btn-dark">Подписаться</button>
 									</form>
 								</div>
-								<div class="footer__item footer__item_middle footer__item_last">
+								<div class="footer__item">
 									<div class="footer__title">Наше приложение</div>
 
 									<div class="footer__qr-cod">
@@ -320,7 +401,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="footer__item footer__item_middle">
+								<div class="footer__item">
 									<div class="footer__title">Поддержка</div>
 
 									<div class="footer__phone">

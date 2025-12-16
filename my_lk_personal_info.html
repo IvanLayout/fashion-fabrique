@@ -31,7 +31,7 @@
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/styles.css">
 
-		<link rel="stylesheet" href="css/response_1400.css" media="(max-width: 1400px)">
+		<link rel="stylesheet" href="css/response_1439.css" media="(max-width: 1439px)">
 		<link rel="stylesheet" href="css/response_1299.css" media="(max-width: 1299px)">
 		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
@@ -79,13 +79,11 @@
 
 						<div class="header__btns _flex">
 							<a href="/" class="header__btn">
-								<span class="header__btn-number">5</span>
 								<svg>
 									<use xlink:href="images/sprite.svg#card"></use>
 								</svg>
 							</a>
 							<a href="/" class="header__btn">
-								<span class="header__btn-number">2</span>
 								<svg>
 									<use xlink:href="images/sprite.svg#favorite"></use>
 								</svg>
@@ -99,30 +97,6 @@
 					</div>
 				</div>
 			</header>
-
-			<div class="btns-fix">
-				<a href="/" class="btns-fix__btn">
-					<svg>
-						<use xlink:href="images/sprite.svg#home"></use>
-					</svg>
-				</a>
-				<a href="/" class="btns-fix__btn">
-					<span class="btns-fix__btn-number">5</span>
-					<svg>
-						<use xlink:href="images/sprite.svg#card"></use>
-					</svg>
-				</a>
-				<a href="/" class="btns-fix__btn">
-					<svg>
-						<use xlink:href="images/sprite.svg#favorite"></use>
-					</svg>
-				</a>
-				<a href="/" class="btns-fix__btn">
-					<svg>
-						<use xlink:href="images/sprite.svg#user"></use>
-					</svg>
-				</a>
-			</div>
 			<!-- End Шапка -->
 
 			<div class="main">
@@ -143,7 +117,7 @@
 										<a href="/" class="aside-lk__link">Мой кабинет</a>
 									</div>
 									<div class="aside-lk__item">
-										<a href="/" class="aside-lk__link">Личный данные</a>
+										<a class="aside-lk__link _active">Личный данные</a>
 									</div>
 									<div class="aside-lk__item">
 										<a href="/" class="aside-lk__link">История заказов</a>
@@ -155,7 +129,7 @@
 										<a href="/" class="aside-lk__link">Бонусная программа</a>
 									</div>
 									<div class="aside-lk__item">
-										<a class="aside-lk__link _active">УПРАВЛЕНИЕ ПОДПИСКАМИ</a>
+										<a href="/" class="aside-lk__link">УПРАВЛЕНИЕ ПОДПИСКАМИ</a>
 									</div>
 								</div>
 
@@ -167,29 +141,153 @@
 							<div class="content-lk">
 								<div class="content-lk__top _flex">
 									<div class="content-lk__top-icon">
-										<img data-src="images/ic_lk5.svg" src="images/img_plug.png" alt="" class="lazyload">
+										<img data-src="images/ic_lk2.svg" src="images/img_plug.png" alt="" class="lazyload">
 									</div>
 
-									<h1 class="main-title">Управление подписками</h1>
+									<h1 class="main-title">Личные данные</h1>
 								</div>
 
-								<form action="" class="form">
-									<div class="form__line form__line-w">
-										<div class="form__label">E-mail</div>
+								<form action="" class="content-lk__width form personal-form">
+									<div class="form__flex-three _flex">
+										<div class="form__line">
+											<div class="form__label">Фамилия</div>
+	
+											<div class="form__filed">
+												<input type="text" value="" placeholder="Иванова" disabled class="form__input">
 
-										<div class="form__filed">
-											<input type="email" value="" placeholder="Iva.A@gmail.com" class="form__input">
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__label">Имя</div>
+	
+											<div class="form__filed">
+												<input type="text" value="" placeholder="Светлана" disabled class="form__input">
+
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__label">Отчество</div>
+	
+											<div class="form__filed">
+												<input type="text" value="" placeholder="Юрьевна" disabled class="form__input">
+
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
 										</div>
 									</div>
-									<div class="form__line form__line-w">
-										<div class="form__label">SMS</div>
+									<div class="form__line">
+										<div class="form__label">Пол</div>
 
-										<div class="form__filed">
-											<input type="tel" value="" placeholder="+7" data-mask="+7 (999) 999-99-99" class="form__input">
+										<div class="radio-choices _flex">
+											<div class="radio">
+												<label class="radio__label">
+													<input type="radio" name="radio_choice">
+
+													<span class="radio__text">Мужской</span>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio__label">
+													<input type="radio" name="radio_choice" checked>
+
+													<span class="radio__text">Женский</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form__flex-three _flex">
+										<div class="form__line">
+											<div class="form__label">E-mail</div>
+	
+											<div class="form__filed">
+												<input type="email" value="" placeholder="Iva.A@gmail.com" disabled class="form__input">
+
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__label">Телефон</div>
+	
+											<div class="form__filed">
+												<input type="tel" value="" placeholder="+7" disabled data-mask="+7 (999) 999-99-99" class="form__input">
+
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__label">Дата рождения</div>
+	
+											<div class="form__filed">
+												<input type="date" value="" placeholder="01.08.2025" disabled class="form__input">
+
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="form__flex-three _flex">
+										<div class="form__line">
+											<div class="form__label">Старый пароль</div>
+	
+											<div class="form__filed">
+												<input type="password" value="" placeholder="*********"  disabled class="form__input">
+
+												<button type="button" class="form__field-edit edit-personal">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="form__line box_btn">
+											<div class="form__label">Новый пароль</div>
+	
+											<div class="form__filed">
+												<input type="password" value="" placeholder="*********" class="form__input">
+											</div>
+										</div>
+										<div class="form__line box_btn">
+											<div class="form__label">Повторите пароль</div>
+	
+											<div class="form__filed">
+												<input type="password" value="" placeholder="*********" class="form__input">
+											</div>
+										</div>
+									</div>
+									<div class="content-lk__btns _flex">
+										<button type="submit" class="form__submit-btn-pad btn-dark">Сохранить изменения</button>
+
+										<div class="form__cancel">
+											<a href="/">Отменить изменения</a>
 										</div>
 									</div>
 
-									<div class="content-lk__bot">
+									<!-- <div class="content-lk__bot">
 										<div class="content-lk__form-agree">
 											<div class="checkbox form__agree">
 												<label class="checkbox__label">
@@ -203,9 +301,9 @@
 										</div>
 
 										<div class="form__submit form__submit-marg">
-											<button type="submit" class="form__submit-btn-pad btn-dark">Сохранить изменения</button>
+											<button type="submit" class="form__submit-btn-w btn-dark">Сохранить изменения</button>
 										</div>
-									</div>
+									</div> -->
 								</form>
 							</div>
 						</div>
@@ -216,10 +314,6 @@
 
 			<footer class="footer _marg">
 				<div class="cont">
-					<div class="footer__logo">
-						<img src="images/logo.svg" alt="">
-					</div>
-
 					<div class="footer__wrap">
 						<div class="footer__wrap-width">
 							<div class="footer__items _flex">
@@ -283,7 +377,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="footer__item footer__item_big">
+								<div class="footer__item">
 									<div class="footer__title">Подпишитесь на новости</div>
 
 									<form action="" class="form-subscribe">
@@ -304,7 +398,7 @@
 										<button type="submit" class="form-subscribe__submit btn-dark">Подписаться</button>
 									</form>
 								</div>
-								<div class="footer__item footer__item_middle footer__item_last">
+								<div class="footer__item">
 									<div class="footer__title">Наше приложение</div>
 
 									<div class="footer__qr-cod">
@@ -320,7 +414,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="footer__item footer__item_middle">
+								<div class="footer__item">
 									<div class="footer__title">Поддержка</div>
 
 									<div class="footer__phone">
