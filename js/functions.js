@@ -54,6 +54,30 @@ $(() => {
 		}
 	})
 
+	// Изменения данных
+	$('body').on('click', '.form__field-edit', function(e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.form__filed').find('.form__input').prop('disabled', true)
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.form__filed').find('.form__input').prop('disabled', false)
+		}
+    })
+
+	// Личный кабинет
+	$('.personal-form .edit-personal').click(function(e){
+		e.preventDefault()
+
+		var parent = $(this).closest('.personal-form')
+
+		parent.find('.box_btn').addClass('_view')
+	})
+
 	// Аккордион
 	$('body').on('click', '.accordion__title', function(e) {
 		e.preventDefault()

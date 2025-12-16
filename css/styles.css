@@ -912,6 +912,11 @@ button
     margin-left: -10px;
 }
 
+.form__flex-three
+{
+	margin-left: -28px;
+}
+
 .form__flex_marg{
 	margin-left: -30px;
 }
@@ -926,6 +931,13 @@ button
 {
     width: calc(100%/2 - 30px);
     margin-left: 30px;
+}
+
+.form__flex-three .form__line
+{
+	width: calc(100%/3 - 28px);
+	margin-bottom: 30px;
+	margin-left: 28px;
 }
 
 .form__line
@@ -952,6 +964,11 @@ button
     border-radius: 0;
     background: #fff;
 	border: 1px solid #eaeaea;
+}
+
+.form .form__input:focus
+{
+	border-color: #2A2A2A;
 }
 
 .form__label
@@ -4061,12 +4078,61 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-top: 30px;
 }
 
-.form__submit-btn-w
+.form__submit-btn-pad
 {
 	padding-left: 30px;
 	padding-right: 30px;
 }
 
+.form__filed
+{
+	position: relative;
+}
+
+.form__field-edit 
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+	opacity: 1;
+	transition: opacity .2s linear;
+}
+
+.form__field-edit svg
+{
+	display: block;
+	width: 15px;
+	height: 15px;
+
+	stroke: #121212;
+	fill: none;
+}
+
+@media (any-hover: hover)
+{
+	.form__field-edit:hover
+	{
+		opacity: .35;
+	}
+}
+
+.form__field-edit._active
+{
+	opacity: 1;
+}
+
+.form__field-edit._active svg
+{
+	stroke: #FF0000;
+}
 
 .lk-width
 {
@@ -4472,6 +4538,128 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
 	padding-left: 24px;
 	padding-right: 24px;
+}
+
+
+.content-lk__width
+{
+	width: 100%;
+	max-width: 914px;
+}
+
+.content-lk__btns
+{
+	align-items: center;
+	align-content: center;
+}
+
+.form__cancel
+{
+	font-size: 12px;
+	line-height: normal;
+	margin-left: 28px;
+}
+
+.form__cancel a
+{
+	color: #555452;
+	text-decoration: none;
+	border-bottom: 1px solid #555452;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.form__cancel a:hover
+	{
+		border-color: transparent;
+	}
+}
+
+
+.radios
+{
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.radio + .radio
+{
+    margin-left: 28px;
+}
+
+.radio input[type=radio]
+{
+    display: none;
+}
+
+.radio__label
+{
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+}
+
+.radio__text
+{
+    position: relative;
+
+    color: #282828;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: block;
+
+    padding-left: 34px;
+}
+
+.radio__text::before
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid #EAEAEA;
+    border-radius: 50%;
+}
+
+.radio__text::after
+{
+    content: "";
+
+    position: absolute;
+    top: 6px;
+    left: 6px;
+
+    width: 12px;
+    height: 12px;
+
+    background: #121212;
+    border-radius: 50%;
+	opacity: 0;
+	transition: opacity .2s linear;
+}
+
+input[type=radio]:checked + .radio__text::after
+{
+	opacity: 1;
+}
+
+.personal-form .box_btn
+{
+	display: none;
+}
+
+.personal-form .box_btn._view
+{
+	display: block;
 }
 /*------------
     footer

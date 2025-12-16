@@ -147,23 +147,147 @@
 									<h1 class="main-title">Личные данные</h1>
 								</div>
 
-								<form action="" class="form">
-									<div class="form__line form__line-w">
-										<div class="form__label">E-mail</div>
+								<form action="" class="content-lk__width form personal-form">
+									<div class="form__flex-three _flex">
+										<div class="form__line">
+											<div class="form__label">Фамилия</div>
+	
+											<div class="form__filed">
+												<input type="text" value="" placeholder="Иванова" disabled class="form__input">
 
-										<div class="form__filed">
-											<input type="email" value="" placeholder="Iva.A@gmail.com" class="form__input">
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__label">Имя</div>
+	
+											<div class="form__filed">
+												<input type="text" value="" placeholder="Светлана" disabled class="form__input">
+
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__label">Отчество</div>
+	
+											<div class="form__filed">
+												<input type="text" value="" placeholder="Юрьевна" disabled class="form__input">
+
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
 										</div>
 									</div>
-									<div class="form__line form__line-w">
-										<div class="form__label">SMS</div>
+									<div class="form__line">
+										<div class="form__label">Пол</div>
 
-										<div class="form__filed">
-											<input type="tel" value="" placeholder="+7" data-mask="+7 (999) 999-99-99" class="form__input">
+										<div class="radio-choices _flex">
+											<div class="radio">
+												<label class="radio__label">
+													<input type="radio" name="radio_choice">
+
+													<span class="radio__text">Мужской</span>
+												</label>
+											</div>
+											<div class="radio">
+												<label class="radio__label">
+													<input type="radio" name="radio_choice" checked>
+
+													<span class="radio__text">Женский</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form__flex-three _flex">
+										<div class="form__line">
+											<div class="form__label">E-mail</div>
+	
+											<div class="form__filed">
+												<input type="email" value="" placeholder="Iva.A@gmail.com" disabled class="form__input">
+
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__label">Телефон</div>
+	
+											<div class="form__filed">
+												<input type="tel" value="" placeholder="+7" disabled data-mask="+7 (999) 999-99-99" class="form__input">
+
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__label">Дата рождения</div>
+	
+											<div class="form__filed">
+												<input type="date" value="" placeholder="01.08.2025" disabled class="form__input">
+
+												<button type="button" class="form__field-edit">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="form__flex-three _flex">
+										<div class="form__line">
+											<div class="form__label">Старый пароль</div>
+	
+											<div class="form__filed">
+												<input type="password" value="" placeholder="*********"  disabled class="form__input">
+
+												<button type="button" class="form__field-edit edit-personal">
+													<svg>
+														<use xlink:href="images/sprite.svg#edit"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="form__line box_btn">
+											<div class="form__label">Новый пароль</div>
+	
+											<div class="form__filed">
+												<input type="password" value="" placeholder="*********" class="form__input">
+											</div>
+										</div>
+										<div class="form__line box_btn">
+											<div class="form__label">Повторите пароль</div>
+	
+											<div class="form__filed">
+												<input type="password" value="" placeholder="*********" class="form__input">
+											</div>
+										</div>
+									</div>
+									<div class="content-lk__btns _flex">
+										<button type="submit" class="form__submit-btn-pad btn-dark">Сохранить изменения</button>
+
+										<div class="form__cancel">
+											<a href="/">Отменить изменения</a>
 										</div>
 									</div>
 
-									<div class="content-lk__bot">
+									<!-- <div class="content-lk__bot">
 										<div class="content-lk__form-agree">
 											<div class="checkbox form__agree">
 												<label class="checkbox__label">
@@ -179,7 +303,7 @@
 										<div class="form__submit form__submit-marg">
 											<button type="submit" class="form__submit-btn-w btn-dark">Сохранить изменения</button>
 										</div>
-									</div>
+									</div> -->
 								</form>
 							</div>
 						</div>
