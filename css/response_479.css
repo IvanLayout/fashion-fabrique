@@ -185,4 +185,28 @@
 		commit
 	------------*/
 	
+	.product-info__prices
+	{
+		margin-top: 20px;
+	}
+
+	.product-info__colors
+	{
+		margin-top: 20px;
+	}
+
+	.product-info__buy-btns
+	{
+		margin-top: 10px;
+	}
+
+	.product-info__buy
+	{
+		width: 100%;
+	}
+
+	.product-info__info
+	{
+		margin-top: 20px;
+	}
 }

@@ -46,5 +46,20 @@
 	/*------------
 		commit
 	------------*/
+
+	.breadcrumbs
+	{
+		margin-top: 35px;
+		margin-bottom: 30px;
+	}
 	
+	.product-info__coll 
+	{
+		width: calc(60% - 30px);
+	}
+
+	.product-info__top
+	{
+		padding-top: 25px;
+	}
 }

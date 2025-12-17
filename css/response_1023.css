@@ -307,5 +307,44 @@
 	/*------------
 		commit
 	------------*/
+
+	.product-images__slider
+	{
+		padding-bottom: 4px;
+		overflow: visible;
+	}
+
+	.product-images__slider .slider-button-prev,
+	.product-images__slider .slider-button-next
+	{
+		display: flex;
+		top: auto;
+		margin-top: 0;
+		bottom: 0;
+	}
 	
+	.product-info__coll
+	{
+		width: 100%;
+	}
+
+	.product-info__colr
+	{
+		width: 100%;
+	}
+
+	.product-images__img
+	{
+		width: 100%;
+	}
+
+	.product-info__btns
+	{
+		display: none;
+	}
+
+	.modal-size 
+	{
+		padding: 50px 15px 40px;
+	}
 }

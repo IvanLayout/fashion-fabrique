@@ -348,6 +348,10 @@ $(window).on('load', () => {
 	if ($('.application__slider').length){
 		applicationSlider()
 	}
+
+	if ($('.product-images__slider').length){
+		productImagesSlider()
+	}
 });
 
 $(window).on('resize', () => {
@@ -377,6 +381,10 @@ $(window).on('resize', () => {
 
 	if ($('.application__slider').length){
 		applicationSlider()
+	}
+
+	if ($('.product-images__slider').length){
+		productImagesSlider()
 	}
 });
 
@@ -418,5 +426,60 @@ function applicationSlider(){
 		$('.application__slider').removeClass('swiper')
 		$('.application__items').removeClass('swiper-wrapper').addClass('_flex')
 		$('.application__item').removeClass('swiper-slide')
+	}
+}
+
+function productImagesSlider(){
+	if ( $(window).width() < 1024 && !$('.product-images__slider').hasClass('swiper-initialized') ) {
+		$('.product-images__slider').addClass('swiper')
+		$('.product-images__items').addClass('swiper-wrapper').removeClass('_flex')
+		$('.product-images__img').addClass('swiper-slide')
+
+		approachSwiper = new Swiper('.product-images__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 10,
+			slidesPerView: 1,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+					slidesPerView: 1
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 2
+				},
+				'768': {
+					spaceBetween: 10,
+					slidesPerView: 2
+				}
+			}
+		})
+	} else if ($(window).width() > 1023 && $('.product-images__slider').hasClass('swiper-initialized')) {
+		if ($('.product-images__slider').length === 1 && $('.product-images__slider').hasClass('swiper-initialized')) {
+			approachSwiper.destroy(true, true)
+		} else if ($('.product-images__slider').length >= 2 && $('.product-images__slider').hasClass('swiper-initialized')) {
+			approachSwiper.forEach(function (element) {
+				element.destroy(true, true)
+			})
+		}
+
+		$('.product-images__slider').removeClass('swiper')
+		$('.product-images__items').removeClass('swiper-wrapper').addClass('_flex')
+		$('.product-images__img').removeClass('swiper-slide')
 	}
 }

@@ -392,7 +392,7 @@ button
 .tooltip .tooltip__text
 {
     font-size: 13px;
-    line-height: 1.2;
+    line-height: normal;
 
     position: absolute;
     z-index: 99;
@@ -401,14 +401,13 @@ button
 
     visibility: hidden;
 
-    width: 311px;
+    width: 300px;
     padding: 20px;
 
     transition: .2s linear;
 
     opacity: 0;
     background: #F7F6F6;
-    color: #111;
 	pointer-events: none;
 }
 
@@ -5082,9 +5081,16 @@ input[type=radio]:checked + .radio-dot__text::after
 	font-weight: 400;
 }
 
-.modal-size__table tr th:first-child
+.modal-size__table tr th:first-child,
+.modal-size__table tr td:first-child
 {
 	padding-left: 0;
+}
+
+.modal-size__table tr th:last-child,
+.modal-size__table tr td:last-child
+{
+	text-align: right;
 }
 
 .modal-size__table tr td
@@ -5097,6 +5103,8 @@ input[type=radio]:checked + .radio-dot__text::after
 	white-space: nowrap;
 }
 
+
+
 .modal-size__table tr:last-child td
 {
 	border-bottom: 1px solid rgba(234, 234, 234, .8);
@@ -5106,6 +5114,8 @@ input[type=radio]:checked + .radio-dot__text::after
 {
 	color: #1C1C1C;
 	text-transform: uppercase;
+	width: 15px;
+	display: inline-block;
 }
 
 @media (max-width: 1600px)

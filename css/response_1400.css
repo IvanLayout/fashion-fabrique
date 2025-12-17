@@ -121,4 +121,31 @@
 		commit
 	------------*/
 	
+	.product-info__coll 
+	{
+		width: calc(60% - 40px);
+	}
+
+	.product-info__colr 
+	{
+		width: 40%;
+	}
+
+	.tooltip .tooltip__text
+	{
+		left: auto;
+		right: -14px;
+	}
+
+	.tooltip:after 
+	{
+		left: auto;
+		right: 0;
+	}
+
+	.tooltip .tooltip__text:before 
+	{
+		left: auto;
+		right: 13px;
+	}
 }

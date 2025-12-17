@@ -279,4 +279,9 @@
 		commit
 	------------*/
 	
+	.tooltip .tooltip__text
+	{
+		width: 280px;
+		padding: 15px;
+	}
 }
