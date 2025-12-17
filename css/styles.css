@@ -4117,6 +4117,7 @@ input[type=radio]:checked + .point__wrap .point__btn span + span{
 {
 	align-items: center;
 	align-content: center;
+	flex-wrap: nowrap;
 }
 
 .content-lk__top-icon
@@ -4141,8 +4142,14 @@ input[type=radio]:checked + .point__wrap .point__btn span + span{
 
 .content-lk__back
 {
+	position: relative;
 	margin-right: 25px;
+}
+
+.content-lk__back .back-page
+{
 	margin-top: 0;
+	margin-right: 0;
 }
 
 .content-lk__date,
@@ -4152,6 +4159,15 @@ input[type=radio]:checked + .point__wrap .point__btn span + span{
 	margin-left: 42px;
     margin-bottom: 4px;
     align-self: flex-end;
+}
+
+.content-lk__name-mob
+{
+	display: none;
+
+	font-size: 28px;
+	line-height: normal;
+	font-weight: 300;
 }
 
 .content-lk__cols
@@ -4277,7 +4293,6 @@ input[type=radio]:checked + .point__wrap .point__btn span + span{
 {
 	align-items: stretch;
 	align-content: stretch;
-	flex-wrap: nowrap;
 	width: 100%;
 	margin-top: 42px;
 }
@@ -4579,6 +4594,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	border-bottom: 1px solid #EAEAEA;
 }
 
+.info-order-table tr td:first-child
+{
+	white-space: nowrap;
+}
+
 .info-order-table tr td:last-child
 {
 	text-align: right;
@@ -4641,29 +4661,29 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 }
 
 
-.lk-width .cart-table
+.content-lk .cart-table
 {
 	margin-top: -20px;
 	margin-bottom: 10px;
 }
 
-.lk-width .cart-table td
+.content-lk .cart-table td
 {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-.lk-width .cart-table tr:first-child td
+.content-lk .cart-table tr:first-child td
 {
 	border-top: none;
 }
 
-.lk-width .cart-table__thumb
+.content-lk .cart-table__thumb
 {
 	width: 160px;
 }
 
-.lk-width .cart-table td.cart-table__prices
+.content-lk .cart-table td.cart-table__prices
 {
 	text-align: right;
 }
@@ -4866,7 +4886,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .history-table__products-val
 {
-	width: 20px;
+	width: 15px;
 	margin-right: 6px;
 	font-size: 16px;
 	line-height: normal;
@@ -5420,5 +5440,37 @@ input[type=radio]:checked + .radio-dot__text::after
 {
 	.section-cart__flex{
 		padding-left: 0;
+	}
+
+
+	.aside-lk
+	{
+		padding: 25px;
+	}
+
+	.aside-lk__name
+	{
+		font-size: 34px;
+	}
+
+	.content-lk__link
+	{
+		padding: 25px 25px 20px;
+	}
+
+	.content-lk__name
+	{
+		font-size: 26px;
+	}
+
+
+	.history-table__status
+	{
+		flex-wrap: wrap;
+	}
+
+	.history-table__products 
+	{
+		width: 45%;
 	}
 }

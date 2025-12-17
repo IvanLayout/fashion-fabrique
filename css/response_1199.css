@@ -289,4 +289,106 @@
 	{
 		width: 43%;
 	}
+
+
+	.content__flex 
+	{
+		margin-left: -15px;
+	}
+
+	.aside-lk 
+	{
+		width: calc(100% / 4 - 15px);
+		margin-left: 15px;
+	}
+
+	.aside-lk__name 
+	{
+		font-size: 28px;
+	}
+
+	.content-lk 
+	{
+		width: calc((100% / 4) * 3 - 15px);
+		margin-left: 15px;
+	}
+
+	.content-lk__cols 
+	{
+		margin-left: -15px;
+	}
+
+	.content-lk__col 
+	{
+		width: calc(100% / 3 - 15px);
+		margin-left: 15px;
+		margin-top: 15px;
+	}
+
+	.content-lk__link + .content-lk__link
+	{
+		margin-top: 15px;
+	}
+
+	.content-lk__icon
+	{
+		height: 40px;
+		width: 44px;
+	}
+
+	.content-lk__icon-width 
+	{
+		width: 35px;
+	}
+
+	.content-lk__val-bot 
+	{
+		bottom: 11px;
+	}
+
+
+	.form__flex-three 
+	{
+		margin-left: -20px;
+	}
+
+	.form__flex-three .form__line 
+	{
+		width: calc(100% / 3 - 20px);
+		margin-left: 20px;
+	}
+
+
+	.lk-bonus__available
+	{
+		width: 60%;
+	}
+
+	.lk-bonus__spent
+	{
+		width: 40%;
+	}
+
+	.history-table__product
+	{
+		display: none;
+		width: calc(100% / 3 - 10px);
+	}
+
+	.history-table__product:nth-child(1),
+	.history-table__product:nth-child(2)
+	{
+		display: block;
+	}
+
+	.history-table__price 
+	{
+		font-size: 22px;
+	}
+
+	.history-table__buy .btn-dark 
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }

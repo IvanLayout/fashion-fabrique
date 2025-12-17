@@ -166,4 +166,77 @@
 		left: auto;
 		right: 13px;
 	}
+
+	
+	.content__flex 
+	{
+		margin-left: -20px;
+	}
+	.aside-lk
+	{
+		width: calc(100% / 4 - 20px);
+		margin-left: 20px;
+	}
+
+	.content-lk 
+	{
+		width: calc((100% / 4) * 3 - 20px);
+		margin-left: 20px;
+	}
+
+	.content-lk__cols
+	{
+		margin-left: -20px;
+	}
+
+	.content-lk__col 
+	{
+		width: calc(100% / 3 - 20px);
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+
+	.aside-lk__name
+	{
+		font-size: 32px;
+	}
+
+	.content-lk__name
+	{
+		font-size: 24px;
+	}
+
+	.content-lk__back .back-page
+	{
+		position: relative;
+		left: 0;
+		top: 0;
+		font-size: 12px;
+		width: auto;
+		height: auto;
+		padding-left: 20px;
+	}
+	
+
+	.history-table tr td
+	{
+		padding-left: 20px;
+	}
+
+	.history-table__products-val
+	{
+		margin-right: 0;
+	}
+
+	.history-table__price
+	{
+		font-size: 24px;
+	}
+
+	.history-order__link
+	{
+		font-size: 26px;
+		line-height: 48px;
+		height: 50px;
+	}
 }

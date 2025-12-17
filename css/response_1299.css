@@ -66,4 +66,24 @@
 	{
 		padding-top: 25px;
 	}
+
+
+	.aside-lk 
+	{
+        padding: 20px;
+    }
+
+	.content-lk__link
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+
+		min-height: 180px;
+	}
+
+	.content-lk__name 
+	{
+		font-size: 22px;
+	}
 }
