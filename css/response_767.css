@@ -354,4 +354,33 @@
 		commit
 	------------*/
 	
+	.tooltip .tooltip__text
+	{
+		width: 280px;
+		padding: 15px;
+	}
+
+	.modal-size 
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 30px;
+	}
+
+	.modal-size__table tr th
+	{
+		padding-left: 10px;
+		font-size: 12px;
+	}
+
+	.modal-size__table tr td
+	{
+		font-size: 12px;
+		padding-left: 10px;
+	}
+
+	.modal-size__table tr td span
+	{
+		min-width: 10px;
+	}
 }

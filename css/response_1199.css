@@ -279,5 +279,14 @@
 	/*------------
 		commit
 	------------*/
+
+	.product-info__coll 
+	{
+		width: calc(57% - 30px);
+	}
 	
+	.product-info__colr 
+	{
+		width: 43%;
+	}
 }
