@@ -43,6 +43,10 @@
 		table-layout: fixed;
 		padding-right: 29px;
 	}
+
+	.products__grid_small{
+		--product-count: 4;
+	}
 	/*------------
 		commit
 	------------*/

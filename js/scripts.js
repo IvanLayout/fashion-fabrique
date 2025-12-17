@@ -73,7 +73,7 @@ $(() => {
 					spaceBetween: 28,
 					slidesPerView: 4,
 				},
-				'1440': {
+				'1400': {
 					spaceBetween: 28,
 					slidesPerView: 4,
 				},
@@ -143,7 +143,7 @@ $(() => {
 					spaceBetween: 28,
 					slidesPerView: 4
 				},
-				'1440': {
+				'1400': {
 					spaceBetween: 28,
 					slidesPerView: 4
 				},
@@ -212,7 +212,7 @@ $(() => {
 					spaceBetween: 28,
 					slidesPerView: 5
 				},
-				'1440': {
+				'1400': {
 					spaceBetween: 28,
 					slidesPerView: 6
 				},
@@ -290,7 +290,7 @@ $(() => {
 					spaceBetween: 28,
 					slidesPerView: 3,
 				},
-				'1440': {
+				'1400': {
 					spaceBetween: 28,
 					slidesPerView: 3,
 				},
