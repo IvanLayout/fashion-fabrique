@@ -39,7 +39,7 @@
 		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
 	</head>
 	<body>
-		<div class="wrap wrap_cart">
+		<div class="wrap">
 			<!-- Шапка -->
 			<header class="header">
 				<div class="cont">
@@ -126,349 +126,555 @@
 			<!-- End Шапка -->
 
 			<div class="main">
-				<section class="breadcrumbs breadcrumbs_cart">
+				<section class="catalog">
 					<div class="cont">
-						<a href="/">Главная</a> <span class="breadcrumbs_sep"></span>Корзина
-					</div>
-				</section>
-
-				<section class="section-cart">
-					<div class="cont">
-						<div class="section-cart__flex _flex">
-							<button type="button" class="back-page back-page_marg">
-								<svg>
-									<use xlink:href="images/sprite.svg#arrow3"></use>
-								</svg>
-
-								назад
-							</button>
-
-							<div class="section-cart__coll section-cart__coll_cart">
-								<div class="main-title">Корзина</div>
-
-								<table class="cart-table">
-									<tbody>
-										<tr>
-											<td class="cart-table__thumb">
-												<a href="/" class="cart-table__img">
-													<img data-src="images/tmp/cart_product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-												</a>
-											</td>
-											<td class="cart-table__info">
-												<div class="cart-table__code">Артикул <span>2410949</span></div>
-
-												<div class="cart-table__name">
-													<a href="/">Трикотажное платье мини <br>с цветами</a>
-												</div>
-
-												<div class="cart-table__info-bot _flex">
-													<div class="cart-table__color">
-														<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-													</div>
-													<div class="cart-table__size">S</div>
-												</div>
-											</td>
-											<td class="cart-table__amount amount">
-												<div class="amount__val _flex">
-													<button type="button" class="amount__btn amount__btn_minus">
-														-
-													</button>
-
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
-
-													<button type="button" class="amount__btn amount__btn_plus">
-														+
-													</button>
-												</div>
-											</td>
-											<td class="cart-table__prices">
-												<div class="cart-table__btns _flex">	
-													<button class="cart-table__favorite js-favorite">
-														<svg>
-															<use xlink:href="images/sprite.svg#favorite"></use>
-														</svg>
-													</button>
-
-													<button class="cart-table__delete">
-														<svg>
-															<use xlink:href="images/sprite.svg#close"></use>
-														</svg>
-													</button>
-												</div>
-
-												<div class="cart-table__prices-box _flex">
-													<div class="cart-table__price">8 450 ₽</div>
-
-													<div class="cart-table__oldprice">11 450 ₽</div>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td class="cart-table__thumb">
-												<a href="/" class="cart-table__img">
-													<img data-src="images/tmp/cart_product2.jpg" src="images/img_plug.png" alt="" class="lazyload">
-												</a>
-											</td>
-											<td class="cart-table__info">
-												<div class="cart-table__code">Артикул <span>2410949</span></div>
-
-												<div class="cart-table__name">
-													<a href="/">Топ с открытой спиной</a>
-												</div>
-
-												<div class="cart-table__info-bot _flex">
-													<div class="cart-table__color">
-														<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-													</div>
-													<div class="cart-table__size">S</div>
-												</div>
-											</td>
-											<td class="cart-table__amount amount">
-												<div class="amount__val _flex">
-													<button type="button" class="amount__btn amount__btn_minus">
-														-
-													</button>
-
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
-
-													<button type="button" class="amount__btn amount__btn_plus">
-														+
-													</button>
-												</div>
-											</td>
-											<td class="cart-table__prices">
-												<div class="cart-table__btns _flex">	
-													<button class="cart-table__favorite js-favorite">
-														<svg>
-															<use xlink:href="images/sprite.svg#favorite"></use>
-														</svg>
-													</button>
-
-													<button class="cart-table__delete">
-														<svg>
-															<use xlink:href="images/sprite.svg#close"></use>
-														</svg>
-													</button>
-												</div>
-
-												<div class="cart-table__prices-box _flex">
-													<div class="cart-table__price">8 450 ₽</div>
-
-													<div class="cart-table__oldprice">11 450 ₽</div>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+						<div class="catalog__top _flex">
+							<div class="breadcrumbs">
+								<a href="/">Главная</a> <span class="breadcrumbs_sep"></span> <a href="/">Одежда</a> <span class="breadcrumbs_sep"></span> Топы
 							</div>
 
-							<div class="section-cart__colr">
-								<div class="section-cart__colr-wrap">
-									<div class="section-cart__imp">При заказе на сумму от 25 000 руб. доставка бесплатна</div>
+							<h1 class="main-title">Топы</h1>
 
-									<div class="cart-total__title cart-total__title_mob">Детали <span>2 товара</span></div>
+							<div class="sorting _flex">
+								<a href="/" class="sorting_sort active">По цене</a>
+								<a href="/" class="sorting_sort">По новизне</a>
+								<a href="/" class="sorting_sort">По популярности</a>
+							</div>
 
-									<div class="cart-total">
-										<div class="cart-total__title">Сумма заказа</div>
+							<div class="catalog__top-flex _flex">
+								<button type="button" class="open-filter">
+									<span>
+										Фильтры
+										<svg>
+											<use xlink:href="images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+								</button>
 
-										<div class="cart-total__items">
-											<div class="cart-total__item _flex">
-												<div class="cart-total__item-name">
-													<span>2 товара</span>
-													<span>Товары на сумму</span>
-												</div>
-												<div class="cart-total__item-val">21 450 ₽</div>
-											</div>
-											<div class="cart-total__item _flex">
-												<div class="cart-total__item-name">Скидка</div>
-												<div class="cart-total__item-val">-11 450 ₽</div>
-											</div>
-										</div>
+								<div class="views views_marg _flex">
+									<a href="/" class="views__view active">
+										<svg>
+											<use xlink:href="images/sprite.svg#view1"></use>
+										</svg>
+									</a>
+									<a href="/" class="views__view views__view_2">
+										<svg>
+											<use xlink:href="images/sprite.svg#view2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
 
-										<div class="cart-total__line _flex">
-											<div class="cart-total__line-name">Итого</div>
-											<div class="cart-total__line-val">10 000 ₽</div>
-										</div>
-
-										<div class="wrap-btn">
-											<a href="/" class="btn-dark btn-dark_full cart-total__btn">Перейти к оформлению</a>
-										</div>
-
-										<form action="" class="form-promo">
-											<div class="form-promo__flex _flex">
-												<input type="text" value="" placeholder="Промокод" class="form-promo__input">
-
-												<button type="submit" class="btn-dark form-promo__submit">Применить</button>
-											</div>
-										</form>
-									</div>
-
-									<div class="loyalty-program">
-										<div class="loyalty-program__title">Программа лояльности</div>
-
-										<div class="loyalty-program__info _flex">
-											<div class="loyalty-program__info-title">У вас</div>
-
-											<div class="loyalty-program__info-flex _flex">
-												<div class="loyalty-program__info-icon">
-													<img data-src="images/ic_loyalty.svg" src="images/img_plug.png" alt="" class="lazyload">
-												</div>
-												<div class="loyalty-program__info-sum">300</div>
-												<div class="loyalty-program__info-imp">
-													<svg>
-														<use xlink:href="images/sprite.svg#imp"></use>
-													</svg>
-												</div>
-											</div>
-										</div>
-
-										<form action="" class="form-promo">
-											<div class="form-promo__flex _flex">
-												<input type="text" value="" placeholder="0" class="form-promo__input">
-
-												<button type="submit" class="btn-dark form-promo__submit">Списать</button>
-											</div>
-										</form>
-									</div>
+							<div class="cats">
+								<div class="cats__flex _flex">
+									<a class="cats__item active">Мини</a>
+									<a href="/" class="cats__item">Миди</a>
+									<a href="/" class="cats__item">Макси</a>
 								</div>
 							</div>
 						</div>
 
-						<div class="section-cart__fix">
-							<button class="section-cart__details">
-								<span>
-									<b>Детали заказа</b>
+						<div class="products">
+							<div class="products__grid _flex">
+								<div class="product">
+									<button class="product__favorite js-favorite">
+										<svg>
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="/" class="product__thumb">
+										<span class="product__images">
+											<span class="product__img _show">
+												<img data-src="images/tmp/product2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+										</span>
 
+										<span class="product__thumbs _flex">
+											<span data-index="0" class="_active"></span>
+											<span data-index="1"></span>
+											<span data-index="2"></span>
+										</span>
+									</a>
+
+									<div class="product__box _flex">
+										<div class="product__name">
+											<a href="/">Топ с вышивкой</a>
+										</div>
+
+										<div class="product__colors _flex">
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+
+									<div class="product__price">8 850 ₽</div>
+								</div>
+								<div class="product">
+									<button class="product__favorite js-favorite">
+										<svg>
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="/" class="product__thumb">
+										<span class="product__images">
+											<span class="product__img _show">
+												<img data-src="images/tmp/product3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+										</span>
+
+										<span class="product__thumbs _flex">
+											<span data-index="0" class="_active"></span>
+											<span data-index="1"></span>
+											<span data-index="2"></span>
+										</span>
+									</a>
+
+									<div class="product__box _flex">
+										<div class="product__name">
+											<a href="/">Топ с открытой спиной</a>
+										</div>
+
+										<div class="product__colors _flex">
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+
+									<div class="product__price">6 850 ₽</div>
+								</div>
+								<div class="product">
+									<button class="product__favorite js-favorite">
+										<svg>
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="/" class="product__thumb">
+										<span class="product__images">
+											<span class="product__img _show">
+												<img data-src="images/tmp/product4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product6.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+										</span>
+
+										<span class="product__thumbs _flex">
+											<span data-index="0" class="_active"></span>
+											<span data-index="1"></span>
+											<span data-index="2"></span>
+										</span>
+									</a>
+
+									<div class="product__box _flex">
+										<div class="product__name">
+											<a href="/">Топ с воланами</a>
+										</div>
+
+										<div class="product__colors _flex">
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+
+									<div class="product__price">5 400 ₽</div>
+								</div>
+								<div class="product">
+									<button class="product__favorite js-favorite">
+										<svg>
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="/" class="product__thumb">
+										<span class="product__images">
+											<span class="product__img _show">
+												<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+										</span>
+
+										<span class="product__thumbs _flex">
+											<span data-index="0" class="_active"></span>
+											<span data-index="1"></span>
+											<span data-index="2"></span>
+										</span>
+									</a>
+
+									<div class="product__box _flex">
+										<div class="product__name">
+											<a href="/">Асимметричный топ с воланом</a>
+										</div>
+
+										<div class="product__colors _flex">
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+
+									<div class="product__price">6 500 ₽</div>
+								</div>
+								<div class="product">
+									<button class="product__favorite js-favorite">
+										<svg>
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="/" class="product__thumb">
+										<span class="product__images">
+											<span class="product__img _show">
+												<img data-src="images/tmp/product8.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+										</span>
+
+										<span class="product__thumbs _flex">
+											<span data-index="0" class="_active"></span>
+											<span data-index="1"></span>
+											<span data-index="2"></span>
+										</span>
+									</a>
+
+									<div class="product__box _flex">
+										<div class="product__name">
+											<a href="/">Топ с воланом</a>
+										</div>
+
+										<div class="product__colors _flex">
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+
+									<div class="product__price">7 950 ₽</div>
+								</div>
+								<div class="product">
+									<button class="product__favorite js-favorite">
+										<svg>
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="/" class="product__thumb">
+										<span class="product__images">
+											<span class="product__img _show">
+												<img data-src="images/tmp/product2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+										</span>
+
+										<span class="product__thumbs _flex">
+											<span data-index="0" class="_active"></span>
+											<span data-index="1"></span>
+											<span data-index="2"></span>
+										</span>
+									</a>
+
+									<div class="product__box _flex">
+										<div class="product__name">
+											<a href="/">Топ с вышивкой</a>
+										</div>
+
+										<div class="product__colors _flex">
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+
+									<div class="product__price">8 850 ₽</div>
+								</div>
+								<div class="product">
+									<button class="product__favorite js-favorite">
+										<svg>
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="/" class="product__thumb">
+										<span class="product__images">
+											<span class="product__img _show">
+												<img data-src="images/tmp/product3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+										</span>
+
+										<span class="product__thumbs _flex">
+											<span data-index="0" class="_active"></span>
+											<span data-index="1"></span>
+											<span data-index="2"></span>
+										</span>
+									</a>
+
+									<div class="product__box _flex">
+										<div class="product__name">
+											<a href="/">Топ с открытой спиной</a>
+										</div>
+
+										<div class="product__colors _flex">
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+
+									<div class="product__price">6 850 ₽</div>
+								</div>
+								<div class="product">
+									<button class="product__favorite js-favorite">
+										<svg>
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="/" class="product__thumb">
+										<span class="product__images">
+											<span class="product__img _show">
+												<img data-src="images/tmp/product4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product5.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product6.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+										</span>
+
+										<span class="product__thumbs _flex">
+											<span data-index="0" class="_active"></span>
+											<span data-index="1"></span>
+											<span data-index="2"></span>
+										</span>
+									</a>
+
+									<div class="product__box _flex">
+										<div class="product__name">
+											<a href="/">Топ с воланами</a>
+										</div>
+
+										<div class="product__colors _flex">
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+
+									<div class="product__price">5 400 ₽</div>
+								</div>
+								<div class="product">
+									<button class="product__favorite js-favorite">
+										<svg>
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="/" class="product__thumb">
+										<span class="product__images">
+											<span class="product__img _show">
+												<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+										</span>
+
+										<span class="product__thumbs _flex">
+											<span data-index="0" class="_active"></span>
+											<span data-index="1"></span>
+											<span data-index="2"></span>
+										</span>
+									</a>
+
+									<div class="product__box _flex">
+										<div class="product__name">
+											<a href="/">Асимметричный топ с воланом</a>
+										</div>
+
+										<div class="product__colors _flex">
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+
+									<div class="product__price">6 500 ₽</div>
+								</div>
+								<div class="product">
+									<button class="product__favorite js-favorite">
+										<svg>
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="/" class="product__thumb">
+										<span class="product__images">
+											<span class="product__img _show">
+												<img data-src="images/tmp/product8.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+										</span>
+
+										<span class="product__thumbs _flex">
+											<span data-index="0" class="_active"></span>
+											<span data-index="1"></span>
+											<span data-index="2"></span>
+										</span>
+									</a>
+
+									<div class="product__box _flex">
+										<div class="product__name">
+											<a href="/">Топ с воланом</a>
+										</div>
+
+										<div class="product__colors _flex">
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+
+									<div class="product__price">7 950 ₽</div>
+								</div>
+								<div class="product">
+									<button class="product__favorite js-favorite">
+										<svg>
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="/" class="product__thumb">
+										<span class="product__images">
+											<span class="product__img _show">
+												<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+											<span class="product__img">
+												<img data-src="images/tmp/product3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+										</span>
+
+										<span class="product__thumbs _flex">
+											<span data-index="0" class="_active"></span>
+											<span data-index="1"></span>
+											<span data-index="2"></span>
+										</span>
+									</a>
+
+									<div class="product__box _flex">
+										<div class="product__name">
+											<a href="/">Асимметричный топ с воланом</a>
+										</div>
+
+										<div class="product__colors _flex">
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" class="product__color">
+												<img data-src="images/tmp/color2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+
+									<div class="product__price">6 500 ₽</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="wrap-btn wrap-btn_marg">
+							<a href="/" class="btn-dark btn-dark_more">Показать еще</a>
+						</div>
+
+						<div class="pagination">
+							<div class="pagination__flex _flex">
+								<a href="/" class="pagination__prev">
 									<svg>
-										<use xlink:href="images/sprite.svg#arrow4"></use>
+										<use xlink:href="images/sprite.svg#arrow1"></use>
 									</svg>
-								</span>
-							</button>
-							<a href="/" class="btn-dark section-cart__order">Перейти к оформлению</a>
-						</div>
-					</div>
-				</section>
-
-				<section class="products _marg">
-					<div class="cont">
-						<div class="main-title">Дополните образ</div>
-
-						<div class="products__slider2 swiper swiper_marg">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide product">
-									<button class="product__favorite js-favorite">
-										<svg>
-											<use xlink:href="images/sprite.svg#favorite"></use>
-										</svg>
-									</button>
-									<a href="/" class="product__thumb">
-										<span class="product__images">
-											<span class="product__img _show">
-												<img data-src="images/tmp/product_decoration1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-											<span class="product__img">
-												<img data-src="images/tmp/product_decoration2.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-											<span class="product__img">
-												<img data-src="images/tmp/product_decoration1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</span>
-
-										<span class="product__thumbs _flex">
-											<span data-index="0" class="_active"></span>
-											<span data-index="1"></span>
-											<span data-index="2"></span>
-										</span>
-									</a>
-
-									<div class="product__box _flex">
-										<div class="product__name">
-											<a href="/">Серьги</a>
-										</div>
-									</div>
-
-									<div class="product__price">2 500 ₽</div>
-								</div>
-								<div class="swiper-slide product">
-									<button class="product__favorite js-favorite">
-										<svg>
-											<use xlink:href="images/sprite.svg#favorite"></use>
-										</svg>
-									</button>
-									<a href="/" class="product__thumb">
-										<span class="product__images">
-											<span class="product__img _show">
-												<img data-src="images/tmp/product_decoration2.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-											<span class="product__img">
-												<img data-src="images/tmp/product_decoration1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-											<span class="product__img">
-												<img data-src="images/tmp/product_decoration2.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</span>
-
-										<span class="product__thumbs _flex">
-											<span data-index="0" class="_active"></span>
-											<span data-index="1"></span>
-											<span data-index="2"></span>
-										</span>
-									</a>
-
-									<div class="product__box _flex">
-										<div class="product__name">
-											<a href="/">Браслет-кафф с ромашкой</a>
-										</div>
-									</div>
-
-									<div class="product__price">1 800 ₽</div>
-								</div>
-								<div class="swiper-slide product">
-									<button class="product__favorite js-favorite">
-										<svg>
-											<use xlink:href="images/sprite.svg#favorite"></use>
-										</svg>
-									</button>
-									<a href="/" class="product__thumb">
-										<span class="product__images">
-											<span class="product__img _show">
-												<img data-src="images/tmp/product_decoration1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-											<span class="product__img">
-												<img data-src="images/tmp/product_decoration2.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-											<span class="product__img">
-												<img data-src="images/tmp/product_decoration1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</span>
-
-										<span class="product__thumbs _flex">
-											<span data-index="0" class="_active"></span>
-											<span data-index="1"></span>
-											<span data-index="2"></span>
-										</span>
-									</a>
-
-									<div class="product__box _flex">
-										<div class="product__name">
-											<a href="/">Серьги</a>
-										</div>
-									</div>
-
-									<div class="product__price">2 500 ₽</div>
-								</div>
+									Назад
+								</a>
+								<a href="/" class="pagination__number">1</a>
+								<a class="pagination__number active">2</a>
+								<span class="pagination__dots">...</span>
+								<a href="/" class="pagination__number">8</a>
+								<a href="/" class="pagination__next">
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow1"></use>
+									</svg>
+									Далее
+								</a>
 							</div>
-
-							<button type="button" class="slider-button-prev">
-								<svg>
-									<use xlink:href="images/sprite.svg#arrow2"></use>
-								</svg>
-							</button>
-							<button type="button" class="slider-button-next">
-								<svg>
-									<use xlink:href="images/sprite.svg#arrow2"></use>
-								</svg>
-							</button>
 						</div>
 					</div>
 				</section>
@@ -1010,6 +1216,22 @@
 						</div>
 					</div>
 				</section>
+
+				<section class="_marg">
+					<div class="cont">
+						<div class="_bord">
+							<div class="text-block text-block_small">
+								<p>
+									Fashion Fabrique — магазин одежды, где стиль собирается по деталям.
+									<br>
+									Мы предлагаем тщательно подобранные коллекции для тех, кто ценит качество, продуманный дизайн и комфорт в каждом образе.
+									<br>
+									Наш ассортимент формируется не ради количества — мы отбираем только те вещи, которые действительно работают на вас: подчёркивают характер, дополняют гардероб и служат больше одного сезона.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 
 
@@ -1171,6 +1393,60 @@
 					</div>
 				</div>
 			</footer>
+		</div>
+
+		<div id="modal-size" class="modal modal-size">
+			<div class="modal-size__wrap">
+				<div class="modal-size__title">Параметры</div>
+
+				<table class="modal-size__table">
+					<thead>
+						<tr>
+							<th>Размер</th>
+							<th>Обхват груди</th>
+							<th>Обхват талии</th>
+							<th>Длина спинки с бретелями</th>
+							<th>Длина переда по центру</th>
+							<th>Рост</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<span>S</span>
+								(42 RU)
+							</td>
+							<td>86 см</td>
+							<td>82 см</td>
+							<td>45–55 см</td>
+							<td>42 см</td>
+							<td>158–168 см</td>
+						</tr>
+						<tr>
+							<td>
+								<span>M</span>
+								(44 RU)
+							</td>
+							<td>90 см</td>
+							<td>88 см</td>
+							<td>46–56 см</td>
+							<td>43 см</td>
+							<td>164–172 см</td>
+						</tr>
+						<tr>
+							<td>
+								<span>L</span>
+								(46 RU)
+							</td>
+							<td>94 см</td>
+							<td>92 см</td>
+							<td>46–56 см</td>
+							<td>43 см</td>
+							<td>168–176 см</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 
 		<div id="modal-request" class="modal">

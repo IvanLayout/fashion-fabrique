@@ -10,6 +10,10 @@
 		margin-top: 40px;
 	}
 
+	._bord{
+		padding-top: 39px;
+	}
+
 
 	.main-banner__box {
 		width: 60%;
@@ -203,6 +207,77 @@
 
 	.points__map{
 		height: 248px;
+	}
+
+
+	.catalog__top .main-title{
+		width: 100%;
+	}
+
+	.catalog__top-flex{
+		width: 100%;
+		order: -2;
+		margin: 0 0 20px;
+		border-bottom: 1px solid #EAEAEA;
+		position: relative;
+		padding: 10px 0;
+		justify-content: center;
+	}
+
+	.open-filter{
+		min-width: 140px;
+		font-size: 14px;
+	}
+
+	.views_marg{
+		margin: 0;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -16px;
+	}
+
+	.catalog__top .main-title{
+		order: -1;
+	}
+
+	.catalog__top .breadcrumbs{
+		margin: 10px 0 20px;
+	}
+
+	.cats{
+		margin-top: 0;
+	}
+
+	.sorting{
+		margin: 20px 0 0;
+		width: 100%;
+		border-top: 1px solid #eaeaea;
+		padding-top: 20px;
+		order: 2;
+	}
+
+	.sorting_sort{
+		padding-top: 0;
+		font-size: 14px;
+	}
+
+	.sorting_sort + .sorting_sort{
+		margin-left: 40px;
+	}
+
+	.products__grid {
+		--product-count: 3;
+		--product-marg: 14px;
+		margin-top: 22px;
+	}
+
+	.wrap-btn_marg{
+		margin-top: 20px;
+	}
+
+	.pagination{
+		margin-top: 20px;
 	}
 
 

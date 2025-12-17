@@ -30,6 +30,18 @@
 		overflow: visible;
 	}
 
+	.product__name{
+		font-size: 18px;
+	}
+
+	.products__slider3 .product__name{
+		font-size: 18px;
+	}
+
+	.products__slider3 .product__price{
+		font-size: 18px;
+	}
+
 	.magazine__item {
 		width: calc(100% - 20px);
 	}
@@ -117,6 +129,58 @@
 	.form .form__textarea{
 		padding: 14px 15px;
 		height: 115px;
+	}
+
+	.sorting{
+		justify-content: space-between;
+	}
+
+	.sorting_sort + .sorting_sort{
+		margin-left: 0;
+	}
+
+	.products__grid {
+		--product-count: 2;
+	}
+
+	.btn-dark_more{
+		min-width: 1px;
+		width: 100%;
+		padding: 0;
+	}
+
+
+	.pagination__flex{
+		margin-left: -16px;
+	}
+
+	.pagination__prev,
+	.pagination__next {
+		min-height: 40px;
+		width: 50px;
+	}
+
+	.pagination__prev{
+		margin-left: 16px;
+		margin-right: 4px;
+	}
+
+	.pagination__next{
+		margin-left: 20px;
+	}
+
+	.pagination__prev svg,
+	.pagination__next svg {
+		width: 50px;
+		height: 6px;
+	}
+
+	.pagination__number,
+	.pagination__dots {
+		font-size: 18px;
+		line-height: 40px;
+		min-width: 30px;
+		margin-left: 16px;
 	}
 
 

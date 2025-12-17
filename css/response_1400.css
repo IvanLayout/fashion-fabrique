@@ -100,6 +100,20 @@
 	}
 
 
+	.catalog__top-flex{
+		margin-left: 40px;
+	}
+
+	.views_marg{
+		margin-left: 38px;
+	}
+
+
+	.catalog__top .main-title {
+   		width: calc(100% - 520px);
+	}
+
+
 	.footer__items
 	{
 		margin-left: -30px;

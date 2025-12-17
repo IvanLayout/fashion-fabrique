@@ -58,12 +58,12 @@ $(() => {
 					slidesPerView: 1
 				},
 				'480': {
-					spaceBetween: 10,
-					slidesPerView: 2
+					spaceBetween: 14,
+					slidesPerView: 3
 				},
 				'768': {
 					spaceBetween: 20,
-					slidesPerView: 3
+					slidesPerView: 4
 				},
 				'1024': {
 					spaceBetween: 20,
@@ -128,12 +128,12 @@ $(() => {
 					slidesPerView: 2
 				},
 				'480': {
-					spaceBetween: 10,
-					slidesPerView: 2
+					spaceBetween: 14,
+					slidesPerView: 3
 				},
 				'768': {
 					spaceBetween: 20,
-					slidesPerView: 3
+					slidesPerView: 4
 				},
 				'1024': {
 					spaceBetween: 20,
@@ -176,7 +176,7 @@ $(() => {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
-			spaceBetween: 10,
+			spaceBetween: 14,
 			slidesPerView: 2,
 			preloadImages: false,
 			lazy: {
@@ -193,16 +193,16 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 10,
+					spaceBetween: 14,
 					slidesPerView: 2
 				},
 				'480': {
-					spaceBetween: 10,
-					slidesPerView: 2
+					spaceBetween: 14,
+					slidesPerView: 3
 				},
 				'768': {
 					spaceBetween: 20,
-					slidesPerView: 3
+					slidesPerView: 4
 				},
 				'1024': {
 					spaceBetween: 28,
@@ -348,6 +348,12 @@ $(window).on('load', () => {
 	if ($('.application__slider').length){
 		applicationSlider()
 	}
+
+	if ( $('.products__grid').length ) {
+		$('.products__grid').each(function() {
+			productsHeight($(this), parseInt($(this).css('--product-count')))
+		})
+	}
 });
 
 $(window).on('resize', () => {
@@ -373,12 +379,35 @@ $(window).on('resize', () => {
 			fakeResize = false
 			fakeResize2 = true
 		}
+
+		if ( $('.products__grid').length ) {
+			$('.products__grid').each(function() {
+				productsHeight($(this), parseInt($(this).css('--product-count')))
+			})
+		}
 	}
 
 	if ($('.application__slider').length){
 		applicationSlider()
 	}
 });
+
+function productsHeight(context, step) {
+	let start    = 0
+	let finish   = step
+	let products = context.find('.product')
+
+	products.find('.product__box').height('auto')
+	products.find('.product__name').height('auto')
+
+	for (let i = 0; i < products.length; i++) {
+		setHeight(products.find('.product__box').slice(start, finish))
+		setHeight(products.find('.product__name').slice(start, finish))
+
+		start  = start + step
+		finish = finish + step
+	}
+}
 
 function applicationSlider(){
 	if ( $(window).width() < 768 && !$('.application__slider').hasClass('swiper-initialized') ) {
