@@ -54,6 +54,158 @@
 	}
 
 
+	.cart-table{
+		padding-top: 19px;
+		border-top: 1px solid #EAEAEA;
+		display: block;
+	}
+
+	.cart-table tr{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		min-height: 242px;
+		padding-left: 175px;
+	}
+
+	.cart-table tr + tr{
+		margin-top: 30px;
+	}
+
+	.cart-table td{
+		padding: 0;
+		border: none;
+	}
+	
+	.cart-table__thumb{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 161px;
+		padding: 0;
+	}
+
+	.cart-table__info{
+		width: 100%;
+	}
+
+	.cart-table__code span{
+		font-size: 12px;
+	}
+
+	.cart-table__name{
+		margin-top: 10px;
+		font-weight: 400;
+	}
+
+	.cart-table__name br{
+		display: none;
+	}
+
+	.cart-table__info-bot{
+		margin-top: -6px;
+	}
+
+	.cart-table td.cart-table__prices{
+		padding: 0;
+	}
+
+	.cart-table__prices{
+		width: 100%;
+		margin-top: 41px;
+	}
+
+	.cart-table__prices-box{
+		justify-content: flex-start;
+	}
+
+	.cart-table__amount{
+		margin-top: 41px;
+	}
+
+	.cart-table__price{
+		font-size: 18px;
+	}
+
+	.amount__val {
+		width: 130px;
+	}
+
+	.cart-table__favorite{
+		display: none;
+	}
+
+	.cart-table__delete{
+		margin-left: 0;
+	}
+
+	.cart-table__btns{
+		top: 0;
+	}
+
+
+	.radio-btns .radio {
+		width: calc(100% / 2 - 10px);
+	}
+
+	.radio-btns .radio._auto {
+		width: calc(100% / 2 - 10px);
+	}
+
+	.radio-btns .radio._big {
+		width: calc(100% / 2 - 10px);
+		max-width: none;
+	}
+
+	.form__label{
+		font-size: 14px;
+	}
+
+	.radio__text br{
+		display: none;
+	}
+
+
+	.points{
+		padding-top: 64px;
+		position: relative;
+	}
+
+	.points__search{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+
+	.points__coll{
+		width: 100%;
+		order: 2;
+	}
+
+	.points__items{
+		height: auto;
+		padding-right: 0;
+		overflow: visible;
+		margin-top: 0;
+	}
+
+	.points__colr{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.point__wrap {
+		padding: 10px 19px 19px;
+	}
+
+	.points__map{
+		height: 248px;
+	}
+
+
 	.footer__bot{
 		padding-top: 42px;
 		padding-bottom: 42px;

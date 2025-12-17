@@ -39,7 +39,7 @@
 		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
 	</head>
 	<body>
-		<div class="wrap">
+		<div class="wrap wrap_cart">
 			<!-- Шапка -->
 			<header class="header">
 				<div class="cont">
@@ -126,7 +126,7 @@
 			<!-- End Шапка -->
 
 			<div class="main">
-				<section class="breadcrumbs">
+				<section class="breadcrumbs breadcrumbs_cart">
 					<div class="cont">
 						<a href="/">Главная</a><span class="breadcrumbs_sep"></span>Корзина
 					</div>
@@ -263,68 +263,88 @@
 							</div>
 
 							<div class="section-cart__colr">
-								<div class="section-cart__imp">При заказе на сумму от 25 000 руб. доставка бесплатна</div>
+								<div class="section-cart__colr-wrap">
+									<div class="section-cart__imp">При заказе на сумму от 25 000 руб. доставка бесплатна</div>
 
-								<div class="cart-total">
-									<div class="cart-total__title">Сумма заказа</div>
+									<div class="cart-total__title cart-total__title_mob">Детали <span>2 товара</span></div>
 
-									<div class="cart-total__items">
-										<div class="cart-total__item _flex">
-											<div class="cart-total__item-name">2 товара</div>
-											<div class="cart-total__item-val">21 450 ₽</div>
-										</div>
-										<div class="cart-total__item _flex">
-											<div class="cart-total__item-name">Скидка</div>
-											<div class="cart-total__item-val">-11 450 ₽</div>
-										</div>
-									</div>
+									<div class="cart-total">
+										<div class="cart-total__title">Сумма заказа</div>
 
-									<div class="cart-total__line _flex">
-										<div class="cart-total__line-name">Итого</div>
-										<div class="cart-total__line-val">10 000 ₽</div>
-									</div>
-
-									<div class="wrap-btn">
-										<a href="/" class="btn-dark btn-dark_full cart-total__btn">Перейти к оформлению</a>
-									</div>
-
-									<form action="" class="form-promo">
-										<div class="form-promo__flex _flex">
-											<input type="text" value="" placeholder="Промокод" class="form-promo__input">
-
-											<button type="submit" class="btn-dark form-promo__submit">Применить</button>
-										</div>
-									</form>
-								</div>
-
-								<div class="loyalty-program">
-									<div class="loyalty-program__title">Программа лояльности</div>
-
-									<div class="loyalty-program__info _flex">
-										<div class="loyalty-program__info-title">У вас</div>
-
-										<div class="loyalty-program__info-flex _flex">
-											<div class="loyalty-program__info-icon">
-												<img data-src="images/ic_loyalty.svg" src="images/img_plug.png" alt="" class="lazyload">
+										<div class="cart-total__items">
+											<div class="cart-total__item _flex">
+												<div class="cart-total__item-name">
+													<span>2 товара</span>
+													<span>Товары на сумму</span>
+												</div>
+												<div class="cart-total__item-val">21 450 ₽</div>
 											</div>
-											<div class="loyalty-program__info-sum">300</div>
-											<div class="loyalty-program__info-imp">
-												<svg>
-													<use xlink:href="images/sprite.svg#imp"></use>
-												</svg>
+											<div class="cart-total__item _flex">
+												<div class="cart-total__item-name">Скидка</div>
+												<div class="cart-total__item-val">-11 450 ₽</div>
 											</div>
 										</div>
+
+										<div class="cart-total__line _flex">
+											<div class="cart-total__line-name">Итого</div>
+											<div class="cart-total__line-val">10 000 ₽</div>
+										</div>
+
+										<div class="wrap-btn">
+											<a href="/" class="btn-dark btn-dark_full cart-total__btn">Перейти к оформлению</a>
+										</div>
+
+										<form action="" class="form-promo">
+											<div class="form-promo__flex _flex">
+												<input type="text" value="" placeholder="Промокод" class="form-promo__input">
+
+												<button type="submit" class="btn-dark form-promo__submit">Применить</button>
+											</div>
+										</form>
 									</div>
 
-									<form action="" class="form-promo">
-										<div class="form-promo__flex _flex">
-											<input type="text" value="" placeholder="0" class="form-promo__input">
+									<div class="loyalty-program">
+										<div class="loyalty-program__title">Программа лояльности</div>
 
-											<button type="submit" class="btn-dark form-promo__submit">Списать</button>
+										<div class="loyalty-program__info _flex">
+											<div class="loyalty-program__info-title">У вас</div>
+
+											<div class="loyalty-program__info-flex _flex">
+												<div class="loyalty-program__info-icon">
+													<img data-src="images/ic_loyalty.svg" src="images/img_plug.png" alt="" class="lazyload">
+												</div>
+												<div class="loyalty-program__info-sum">300</div>
+												<div class="loyalty-program__info-imp">
+													<svg>
+														<use xlink:href="images/sprite.svg#imp"></use>
+													</svg>
+												</div>
+											</div>
 										</div>
-									</form>
+
+										<form action="" class="form-promo">
+											<div class="form-promo__flex _flex">
+												<input type="text" value="" placeholder="0" class="form-promo__input">
+
+												<button type="submit" class="btn-dark form-promo__submit">Списать</button>
+											</div>
+										</form>
+									</div>
 								</div>
 							</div>
+						</div>
+
+						<div class="section-cart__fix">
+							<button class="section-cart__details">
+								<span>
+									<b>Детали заказа</b>
+
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow4"></use>
+									</svg>
+								</span>
+							</button>
+							<a href="/" class="btn-dark section-cart__order">Перейти к оформлению</a>
 						</div>
 					</div>
 				</section>

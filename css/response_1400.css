@@ -38,6 +38,68 @@
 		font-size: 32px;
 	}
 
+	.section-cart__flex{
+		position: relative;
+	}
+
+	.back-page{
+		position: absolute;
+		left: 0;
+		top: 14px;
+		font-size: 0;
+		width: 10px;
+		height: 20px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.section-cart__coll .main-title{
+		padding-left: 22px;
+	}
+
+	.section-cart__colr_chekout{
+		padding-top: 0;
+	}
+
+	.section-cart__imp{
+		padding: 15px;
+	}
+
+	.section-cart__coll_cart{
+		padding-top: 0;
+	}
+
+	.point__wrap{
+		padding: 14px;
+	}
+
+	.loyalty-program{
+		padding: 19px 15px;
+	}
+
+	.cart-total{
+		padding: 19px 15px;
+	}
+
+	.loyalty-program__title{
+		font-size: 24px;
+	}
+
+	.cart-total__title{
+		font-size: 32px;
+	}
+
+
+	.section-cart .form__flex_marg{
+		margin-left: -10px;
+	}
+
+	.section-cart .form__flex_marg .form__line {
+		width: calc(100% / 2 - 10px);
+		margin-left: 10px;
+	}
+
+
 	.footer__items
 	{
 		margin-left: -30px;

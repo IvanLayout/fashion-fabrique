@@ -52,6 +52,74 @@
 	}
 
 
+	.amount__val{
+		width: 100%;
+	}
+
+	.cart-table__prices-box{
+		justify-content: space-between;
+	}
+
+	.cart-table__oldprice{
+		margin-left: 16px;
+	}
+
+	.section-cart__bot .section-cart__checkbox{
+		max-width: 306px;
+	}
+
+
+	.form__flex{
+		margin-left: 0;
+	}
+
+	.form__flex .form__line {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.section-cart .form__flex_marg{
+		margin-left: 0;
+	}
+
+	.section-cart .form__flex_marg .form__line{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.radio-btns .radio {
+		width: 100%;
+	}
+
+	.radio-btns .radio._auto {
+		width: 100%;
+	}
+
+	.radio-btns .radio._big {
+		width: 100%;
+	}
+
+	.form__adres{
+		flex-wrap: wrap;
+		margin-left: 0;
+	}
+
+	.form__adres .form__line{
+		width: 100%;
+		margin-left: 0;
+	}
+
+
+	.form .form__input{
+		padding: 0 15px;
+	}
+
+	.form .form__textarea{
+		padding: 14px 15px;
+		height: 115px;
+	}
+
+
 	.footer__items{
 		margin-left: 0;
 	}

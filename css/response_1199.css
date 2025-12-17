@@ -1,6 +1,281 @@
 @media (max-width: 1199px)
 {
+	.section-cart__flex{
+		flex-wrap: wrap;
+	}
 
+	.section-cart__coll{
+		width: 100%;
+		max-width: none;
+		margin: 0;
+	}
+
+	.section-cart__colr{
+		width: 100%;
+		max-width: none;
+		margin: 0;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 89;
+		width: 100%;
+		height: calc(100% - 60px);
+		padding: 30px 20px 50px;
+		background: #fff;
+		overflow: hidden;
+		overflow-y: scroll;
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity .2s linear, visibility .2s linear;
+	}
+
+	.section-cart__colr._show{
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.section-cart__colr-wrap{
+		position: relative;
+		top: 0;
+	}
+
+	.section-cart__imp{
+		position: fixed;
+		left: 0;
+		bottom: 60px;
+		width: 100%;
+		z-index: 10;
+		background: #414141;
+		font-weight: 400;
+		padding: 9px 20px;
+		font-size: 10px;
+		line-height: 12px;
+		text-transform: uppercase;
+		color: #fff;
+		margin: 0;
+	}
+
+	.cart-total{
+		padding: 0;
+		border: none;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.cart-total__title{
+		display: none;
+	}
+
+	.cart-total__title_mob{
+		display: block;
+		font-size: 30px;
+	}
+
+	.cart-total__title span{
+		display: inline-block;
+		vertical-align: bottom;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: normal;
+		color: rgba(18, 18, 18, 0.6);
+		margin-left: 14px;
+		padding-bottom: 5px;
+	}
+
+	.cart-total .wrap-btn{
+		display: none;
+	}
+
+	.cart-total__items{
+		width: 100%;
+		margin-top: 23px;
+	}
+
+	.cart-total__item{
+		padding-bottom: 10px;
+	}
+
+	.cart-total__item-name{
+		color: #777;
+	}
+
+	.cart-total__item-val{
+		font-weight: 300;
+		font-size: 18px;
+		color: #121212;
+	}
+
+	.cart-total__line{
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.cart-total__line-name{
+		color: #1c1c1c;
+	}
+
+	.form-promo{
+		margin-top: 20px;
+		order: -1;
+	}
+
+	.loyalty-program__info{
+		margin-top: 4px;
+	}
+
+	.loyalty-program{
+		padding: 25px 20px 0;
+		margin: 20px -20px 0;
+		width: calc(100% + 40px);
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+	}
+
+	.cart-total__item-name span{
+		display: none;
+	}
+
+	.cart-total__item-name span + span{
+		display: block;
+	}
+
+	.cart-total__products{
+		display: none;
+	}
+
+	.section-cart__colr_chekout .cart-total .wrap-btn{
+		display: block;
+	}
+
+	.section-cart__colr.section-cart__colr_chekout{
+		padding-bottom: 20px;
+		height: 100%;
+	}
+
+	.section-cart__colr_chekout .section-cart__colr-wrap{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.close-details{
+		position: fixed;
+		width: 40px;
+		height: 40px;
+		right: 0;
+		top: 0;
+		background: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		color: #1c1c1c;
+		transition: color .2s linear;
+	}
+
+	@media (any-hover: hover){
+		.close-details:hover{
+			color: #777;
+		}
+	}
+
+	.close-details svg{
+		display: block;
+		width: 16px;
+		height: 16px;
+		stroke: currentColor;
+	}
+
+	.section-cart__fix{
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding: 10px 20px;
+		background: #fff;
+		z-index: 100;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.section-cart__bot{
+		padding: 10px 20px 0;
+		width: calc(100% + 40px);
+		margin: 30px -20px 0;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		border-top: 1px solid #EAEAEA;
+	}
+
+	.section-cart .checkbox__text{
+		line-height: 1.67;
+	}
+
+	.section-cart__details{
+		font-size: 14px;
+		line-height: 40px;
+		color: #121212;
+		text-decoration: none;
+		display: block;
+		width: calc(50% - 6px);
+		transition: color .2s linear;
+		margin-right: 12px;
+	}
+
+	.section-cart__details span{
+		display: inline-block;
+		padding-right: 10px;
+		position: relative;
+	}
+
+	.section-cart__details b{
+		font-weight: 400;
+		border-bottom: 1px dashed currentColor;
+	}
+
+	.section-cart__details svg{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		display: block;
+		width: 4px;
+		height: 3px;
+		margin-top: -2px;
+		fill: #121212;
+	}
+
+	.section-cart__details._active{
+		color: #777;
+	}
+
+	.section-cart__details._active svg{
+		transform: rotate(180deg);
+	}
+
+	.section-cart__order{
+		padding: 0;
+		width: calc(50% - 6px);
+	}
+
+	.wrap_cart{
+		padding-bottom: 60px;
+	}
+
+
+	.checkout-sector__item_mob{
+		margin-bottom: 30px;
+		display: block;
+	}
 	/*------------
 		commit
 	------------*/

@@ -170,6 +170,26 @@ $(() => {
 			$(delivery).addClass('_show')
 		}
 	})
+
+
+	$('body').on('click', '.section-cart__details', function(e) {
+		e.preventDefault()
+		if( $(this).hasClass('_active') ) {
+			$(this).removeClass('_active')
+			$('.section-cart__colr').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+			$('.section-cart__colr').addClass('_show')
+		}
+	})
+
+
+	$('body').on('click', '.close-details', function(e) {
+		e.preventDefault()
+		
+		$('.section-cart__details').removeClass('_active')
+		$('.section-cart__colr').removeClass('_show')
+	})
 })
 
 $(window).on('load', () => {
