@@ -3384,6 +3384,24 @@ input[type=radio]:checked + .point__wrap .point__btn span + span{
 	position: relative;
 }
 
+.product-info__color::after
+{
+	position: absolute;
+	content: '';
+	top: -4px;
+	left: -4px;
+
+	display: block;
+
+	width: calc(100% + 8px);
+	height: calc(100% + 8px);
+
+	border: 1px solid #EAEAEA;
+	border-radius: 50%;
+	opacity: 0;
+	transition: opacity .2s linear;
+}
+
 .product-info__color._active::before
 {
 	position: absolute;
@@ -3408,6 +3426,14 @@ input[type=radio]:checked + .point__wrap .point__btn span + span{
 	height: 100%;
 	object-fit: cover;
 	border-radius: 50%;
+}
+
+@media (any-hover: hover)
+{
+	.product-info__color:hover::after
+	{
+		opacity: 1;
+	}
 }
 
 
