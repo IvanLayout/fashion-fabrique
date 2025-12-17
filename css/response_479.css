@@ -209,4 +209,10 @@
 	{
 		margin-top: 20px;
 	}
+
+
+	.modal-size__table tr th
+	{
+		font-size: 10px;
+	}
 }
