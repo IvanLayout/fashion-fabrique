@@ -468,13 +468,7 @@
 
 	.catalog-filter
 	{
-		display: none;
 		flex-wrap: wrap;
-	}
-
-	.catalog-filter._show
-	{
-		display: flex;
 	}
 
 	.catalog-filter .main-title
