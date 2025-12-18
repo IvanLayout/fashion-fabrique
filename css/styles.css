@@ -3308,6 +3308,7 @@ input[type=radio]:checked + .point__wrap .point__btn span + span{
 .catalog__top{
 	align-items: center;
 	align-content: center;
+	position: relative;
 }
 
 .catalog__top .breadcrumbs{
@@ -5280,10 +5281,16 @@ input[type=radio]:checked + .radio-dot__text::after
 
 .catalog-filter
 {
-	margin-top: 30px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding-top: 30px;
 	flex-wrap: nowrap;
 	width: 100%;
 	display: none;
+	background: #fff;
+	z-index: 10;
+	padding-bottom: 20px;
 }
 
 .catalog-filter._show
