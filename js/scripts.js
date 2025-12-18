@@ -39,6 +39,14 @@ $(() => {
 		})
 	}
 
+	if ($('#datepicker2').length) {
+		new AirDatepicker('#datepicker2', {
+			container: '#datepicker-here2',
+			autoClose: true,
+			position: 'bottom left',
+		})
+	}
+
 	if ($('.products__slider').length) {
 		new Swiper('.products__slider', {
 			loop: false,
