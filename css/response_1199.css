@@ -391,4 +391,10 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
+
+	.catalog-filter__item
+	{
+		width: calc(100% / 3 - 15px);
+	}
 }

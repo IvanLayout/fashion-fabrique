@@ -373,6 +373,25 @@
 		font-size: 18px;
 	}
 
+
+	.catalog-filter
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.catalog-filter__item 
+	{
+		width: calc(100% / 1 - 15px);
+		margin-top: 12px;
+	}
+
+	.catalog-filter__reset
+	{
+		margin-left: auto;
+	}
+
+
 	.modal
 	{
 		padding-left: 20px;

@@ -465,4 +465,26 @@
 	{
 		margin-top: 18px;
 	}
+
+	.catalog-filter
+	{
+		display: none;
+		flex-wrap: wrap;
+	}
+
+	.catalog-filter._show
+	{
+		display: flex;
+	}
+
+	.catalog-filter .main-title
+	{
+		width: 100%;
+	}
+
+	.catalog-filter__wrap
+	{
+		margin-left: 0;
+		margin-top: 20px;
+	}
 }

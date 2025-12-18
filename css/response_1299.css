@@ -86,4 +86,15 @@
 	{
 		font-size: 22px;
 	}
+
+	.catalog-filter__flex
+	{
+		margin-left: -15px;
+	}
+
+	.catalog-filter__item
+	{
+		width: calc(100% / 5 - 15px);
+		margin-left: 15px;
+	}
 }

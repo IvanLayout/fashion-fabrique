@@ -239,4 +239,20 @@
 		line-height: 48px;
 		height: 50px;
 	}
+
+	.catalog-filter .main-title
+	{
+		width: auto;
+	}
+
+	.catalog-filter__flex
+	{
+		margin-left: -20px;
+	}
+
+	.catalog-filter__item
+	{
+		width: calc(100% / 5 - 20px);
+		margin-left: 20px;
+	}
 }

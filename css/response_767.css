@@ -655,6 +655,12 @@
 	}
 
 
+	.catalog-filter__item 
+	{
+		width: calc(100% / 2 - 15px);
+	}
+
+
 	.modal .form__flex .form__line 
 	{
 		width: calc(100% / 1 - 10px);
