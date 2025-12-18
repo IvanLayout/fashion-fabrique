@@ -31,6 +31,17 @@ $(() => {
 		}
 	})
 
+	$('body').on('submit', '.form-ajax', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: $(this).data('content'),
+			type: 'inline'
+		}])
+	})
+
 	if ($('#datepicker1').length) {
 		new AirDatepicker('#datepicker1', {
 			container: '#datepicker-here1',
