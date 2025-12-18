@@ -29,6 +29,7 @@
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/air-datepicker.css">
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1400.css" media="(max-width: 1400px)">
@@ -41,13 +42,7 @@
 	<body>
 		<div class="wrap">
 			<!-- Шапка -->
-						<header class="header">
-				<div class="header__top">
-					<div class="cont">
-						<div class="header__top-info">Каждую пятницу — новые поступления и сюрпризы</div>
-					</div>
-				</div>
-
+			<header class="header">
 				<div class="cont">
 					<div class="header__flex _flex">
 						<button type="button" class="mob-menu-btn">
@@ -272,8 +267,7 @@
 											<div class="form__label">Дата рождения</div>
 	
 											<div class="form__filed">
-												<input type="date" value="" placeholder="01.08.2025" disabled class="form__input">
-
+												<input type="text " value="" placeholder="01.08.2025" id="datepicker" autocomplete="off" disabled class="form__input">
 												<button type="button" class="form__field-edit">
 													<svg>
 														<use xlink:href="images/sprite.svg#edit"></use>
@@ -516,6 +510,7 @@
 		<script src="js/fancybox.js"></script>
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/nice-select.js"></script>
+		<script src="js/air-datepicker.js"></script>
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>

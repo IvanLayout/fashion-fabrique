@@ -450,8 +450,19 @@
 	}
 	
 
+	.lk-bonus
+	{
+		max-width: 100%;
+	}
+
 	.lk-bonus__items
 	{
 		margin-top: 30px;
+	}
+
+
+	.lk-history__table
+	{
+		margin-top: 18px;
 	}
 }

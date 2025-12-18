@@ -31,6 +31,11 @@ $(() => {
 		}
 	})
 
+	new AirDatepicker('#datepicker', {
+		autoClose: true,
+		position: 'bottom left',
+		dateFormat: 'MM/dd/yyyy'
+	})
 
 	if ($('.products__slider').length) {
 		new Swiper('.products__slider', {

@@ -4120,6 +4120,12 @@ input[type=radio]:checked + .point__wrap .point__btn span + span{
 	flex-wrap: nowrap;
 }
 
+.content-lk__top-flex
+{
+	align-items: center;
+	align-content: center;
+}
+
 .content-lk__top-icon
 {
 	height: 36px;
@@ -4898,6 +4904,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	align-items: stretch;
 	align-content: stretch;
 	flex-wrap: nowrap;
+	width: 100%;
 }
 
 .history-table__product

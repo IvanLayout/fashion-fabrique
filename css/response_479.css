@@ -361,4 +361,15 @@
 	{
 		margin-right: 10px;
 	}
+
+
+	.content-lk__val-product
+	{
+		margin-left: 20px;
+	}
+	
+	.history-order__link
+	{
+		font-size: 18px;
+	}
 }
