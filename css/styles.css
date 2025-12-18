@@ -1118,6 +1118,11 @@ button
     opacity: 1;
 }
 
+.form_marg
+{
+	margin-top: 20px;
+}
+
 .form__flex
 {
     margin-left: -10px;
@@ -1189,6 +1194,12 @@ button
 	color: #121212;
 
     margin-bottom: 10px;
+}
+
+.form__label-big
+{
+	font-size: 22px;
+	font-weight: 300;
 }
 
 .form .form__textarea
@@ -5362,11 +5373,16 @@ input[type=radio]:checked + .radio-dot__text::after
     display: none;
     visibility: visible !important;
 
-    width: 600px;
+    width: 416px;
     max-width: 100%;
-    padding: 0;
+    padding: 40px;
 
     background: #FFF;
+}
+
+.modal-big
+{
+	width: 764px;
 }
 
 .modal-size
@@ -5441,6 +5457,56 @@ input[type=radio]:checked + .radio-dot__text::after
 	text-transform: uppercase;
 	min-width: 15px;
 	display: inline-block;
+}
+
+
+.modal__wrap
+{
+	width: 100%;
+}
+
+.modal__title
+{
+	font-size: 30px;
+	font-weight: 300;
+	line-height: normal;
+	padding-bottom: 19px;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+.modal__bot
+{
+	margin-top: 30px;
+	border-top: 1px solid #EAEAEA;
+	padding-top: 20px;
+}
+
+.modal__bot-w
+{
+	max-width: 336px;
+}
+
+.modal__btns
+{
+	margin-top: 35px;
+	text-align: center;
+}
+
+.modal__btn
+{
+	margin-top: 20px;
+	color: #5A5652;
+	line-height: normal;
+	border-bottom: 1px solid transparent;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.modal__btn:hover
+	{
+		border-color: #5A5652;
+	}
 }
 
 @media (max-width: 1600px)
