@@ -78,6 +78,50 @@ $(() => {
 		parent.find('.box_btn').addClass('_view')
 	})
 
+	// Табы
+	var locationHash = window.location.hash
+
+	$('body').on('click', '.tabs__button_js', function(e) {
+		e.preventDefault()
+
+		if( !$(this).hasClass('_active') ) {
+			let parent = $(this).closest('.tabs-container')
+			let activeTab = $(this).data('content')
+			let level = $(this).data('level')
+
+			parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
+			parent.find('.tab-content.' + level).removeClass('_active')
+
+			$(this).addClass('_active')
+			$(activeTab).addClass('_active')
+
+			if ( $(this).closest('.production-process').length ) {
+				clearTimeout($stopTimer);
+				$index = $(this).index();
+				$('.production-process .tabs').attr('class', '').addClass('tabs act' + $index);
+				tabsTimer();
+
+				return false
+			}
+		}
+	})
+
+	if( locationHash && $('.tabs-container').length ) {
+		let activeTab = $('.tabs__button_js[data-content="'+ locationHash +'"]')
+		let parent = activeTab.closest('.tabs-container')
+		let level = activeTab.data('level')
+
+		parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
+		parent.find('.tab-content.' + level).removeClass('_active')
+
+		activeTab.addClass('_active')
+		$(locationHash).addClass('_active')
+
+		$('html, body').stop().animate({
+			scrollTop: $(locationHash).offset().top - 120
+		}, 1000)
+	}
+
 	// Аккордион
 	$('body').on('click', '.accordion__title', function(e) {
 		e.preventDefault()

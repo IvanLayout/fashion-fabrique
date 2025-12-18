@@ -1207,12 +1207,96 @@
 			<div class="modal__wrap">
 				<div class="modal__title">Авторизация</div>
 
+				<div class="tabs-container">
+					<div class="tabs tabs_marg _flex">
+						<button type="button" data-content="#tab-log1" data-level="level1" class="tabs__text tabs__button_js _active">
+							Телефон
+						</button>
+						<button type="button" data-content="#tab-log2" data-level="level1" class="tabs__text tabs__button_js">
+							Почта
+						</button>
+					</div>
+
+					<div class="tab-content level1 _active" id="tab-log1">
+						<form action="" class="form form_marg">
+							<div class="form__line">
+								<div class="form__field">
+									<input type="tel" value="" placeholder="+7" data-mask="+7 999 999-99-99" class="form__input">
+								</div>
+							</div>
+							
+							<div class="modal__bot">
+								<div class="checkbox">
+									<label class="checkbox__label">
+										<input type="checkbox" name="">
+			
+										<span class="checkbox__text">
+											нажимая кнопку вы соглашаетесь согласие <br>на <a href="/" target="_blank">обработку персональных данных</a>
+										</span>
+									</label>
+								</div>
+		
+								<div class="modal__btns">
+									<button type="submit" class="form__submit-btn btn-dark">Войти</button>
+		
+									<button type="button" data-content="#modal-registration" class="modal__btn modal-btn">Регистрация</button>
+								</div>
+								
+							</div>
+						</form>
+					</div>
+
+					<div class="tab-content level1" id="tab-log2">
+						<form action="" class="form form_marg">
+							<div class="form__line">
+								<div class="form__field">
+									<input type="email" value="" placeholder="E-mail" class="form__input">
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="form__field">
+									<input type="password" value="" placeholder="пароль" class="form__input">
+								</div>
+								<div class="form__bot">
+									<div class="form__bot-flex _flex">
+										<div class="error-text">Введен неверный логин или пароль</div>
+
+										<button type="button" data-content="#modal-forgot-password" class="modal-password modal-btn">Забыли пароль?</button>
+									</div>
+								</div>
+							</div>
+							
+							<div class="modal__bot">
+								<div class="checkbox">
+									<label class="checkbox__label">
+										<input type="checkbox" name="">
+			
+										<span class="checkbox__text">
+											нажимая кнопку вы соглашаетесь согласие <br>на <a href="/" target="_blank">обработку персональных данных</a>
+										</span>
+									</label>
+								</div>
+		
+								<div class="modal__btns">
+									<button type="submit" class="form__submit-btn btn-dark">Войти</button>
+		
+									<button type="button" data-content="#modal-registration" class="modal__btn modal-btn">Регистрация</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-forgot-password" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__title">Восстановление пароля</div>
+
 				<form action="" class="form form_marg">
 					<div class="form__line">
-						<div class="form__label form__label-big">Телефон</div>
-
 						<div class="form__field">
-							<input type="tel" value="" placeholder="+7" data-mask="+7 999 999-99-99" class="form__input">
+							<input type="email" value="" placeholder="E-mail" class="form__input">
 						</div>
 					</div>
 					
@@ -1232,9 +1316,91 @@
 
 							<button type="button" data-content="#modal-registration" class="modal__btn modal-btn">Регистрация</button>
 						</div>
-						
 					</div>
 				</form>
+			</div>
+		</div>
+
+		<div id="modal-enter-code" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__title">Введите код из СМС</div>
+
+				<form action="" class="form form_marg">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" placeholder="Код" class="form__input">
+						</div>
+
+						<div class="form__bot">
+							<div class="form__bot-flex _flex">
+								<div class="">До отправки нового кода 2:00</div>
+
+								<div class="resend-code">
+									<a href="/" class="resend-code__link">
+										<span>отправить код повторно</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="modal__bot">
+						<div class="checkbox">
+							<label class="checkbox__label">
+								<input type="checkbox" name="">
+	
+								<span class="checkbox__text">
+									нажимая кнопку вы соглашаетесь согласие <br>на <a href="/" target="_blank">обработку персональных данных</a>
+								</span>
+							</label>
+						</div>
+
+						<div class="modal__btns">
+							<button type="submit" class="form__submit-btn btn-dark">Войти</button>
+
+							<button type="button" data-content="#modal-registration" class="modal__btn modal-btn">Регистрация</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="modal-new-password" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__title">Новый пароль</div>
+
+				<form action="" class="form form_marg">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="password" value="" placeholder="Новый пароль" class="form__input">
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="password" value="" placeholder="Повторите новый пароль" class="form__input">
+						</div>
+					</div>
+					
+					<div class="form__submit form__submit-marg2">
+						<button type="submit" class="form__submit-btn btn-dark">Сохранить пароль</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="modal-sent-letter" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__icon">
+					<img data-src="images/ic_send.svg" src="images/img_plug.png" alt="" class="lazyload">
+				</div>
+
+				<div class="modal__title">Мы отправили письмо с инструкцией по восстановлению пароля на ваш e-mail</div>
+
+				<div class="modal__btns">
+					<button type="button" data-content="#modal-authorization" class="modal-btn__login modal-btn btn-dark">Войти</button>
+
+					<button type="button" data-content="#modal-registration" class="modal__btn modal-btn">Регистрация</button>
+				</div>
 			</div>
 		</div>
 
@@ -1263,7 +1429,15 @@
 						</div>
 						<div class="form__line">
 							<div class="form__field">
-								<input type="email" value="" placeholder="E-mail" class="form__input">
+								<input type="email" value="" placeholder="E-mail" class="form__input error">
+							</div>
+
+							<div class="form__bot">
+								<div class="form__bot-flex _flex">
+									<div class="error-text">Данный E-mail уже зарегистрирован</div>
+
+									<button type="button" data-content="#modal-forgot-password" class="modal-password modal-btn">Забыли пароль?</button>
+								</div>
 							</div>
 						</div>
 						<div class="form__line">

@@ -1223,9 +1223,9 @@ button
 .form .form__input.error,
 .form .error + .nice-select .current
 {
-    color: #CC1525 !important;
+    color: #C23E3E !important;
 
-    border-color: #CC1525 !important;
+    border-color: #C23E3E !important;
 }
 
 .form .form__input:disabled,
@@ -1240,7 +1240,7 @@ button
 
 .form .error-text
 {
-    color: #CC1525;
+    color: #C23E3E;
     font-size: 12px;
 
     margin-top: 6px;
@@ -4530,6 +4530,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-top: 30px;
 }
 
+.form__submit-marg2
+{
+	margin-top: 20px;
+}
+
 .form__submit-btn-pad
 {
 	padding-left: 30px;
@@ -5113,6 +5118,153 @@ input[type=radio]:checked + .radio-dot__text::after
 {
 	display: block;
 }
+
+
+.tabs
+{
+    position: relative;
+    z-index: 1;
+}
+
+.tabs_marg
+{
+	margin-top: 20px;
+}
+
+.tabs__text
+{
+    position: relative;
+
+    font-size: 22px;
+    font-weight: 300;
+    line-height: normal;
+	width: 50%;
+	padding: 0 10px 11px;
+	border-bottom: 2px solid #EAEAEA;
+    transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .tabs__text:hover
+    {
+        border-color: #1C1C1C;
+    }
+}
+
+.tabs__text._active
+{
+    border-color: #1C1C1C;
+}
+
+.tab-content
+{
+    position: relative;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    height: 0;
+
+    opacity: 0;
+}
+
+.tab-content._active
+{
+    visibility: visible;
+    overflow: visible;
+
+    height: auto;
+
+    opacity: 1;
+
+    transition: opacity .5s linear, visibility .5s linear;
+}
+
+
+.form__bot
+{
+	font-size: 12px;
+	color: #5A5652;
+	line-height: normal;
+}
+
+.form__bot-flex
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	white-space: nowrap;
+
+	margin-top: 7px;
+}
+
+.form__bot-flex .error-text
+{
+	margin-top: 0;
+}
+
+.modal-password
+{
+	font-size: 12px;
+	color: #5A5652;
+	line-height: normal;
+	border-bottom: 1px solid #5A5652;
+	transition: border .2s linear;
+	white-space: nowrap;
+	margin-left: 15px;
+}
+
+@media (any-hover: hover)
+{
+	.modal-password:hover
+	{
+		border-color: transparent;
+	}
+}
+
+.resend-code
+{
+	margin-left: 15px;
+	white-space: nowrap;
+}
+
+.resend-code a
+{
+	color: #5A5652;
+	text-decoration: none;
+	position: relative;
+	padding-left: 19px;
+}
+
+.resend-code a::before
+{
+	position: absolute;
+	content: '';
+	top: 3px;
+	left: 0;
+
+	display: block;
+
+	width: 12px;
+	height: 12px;
+
+	background: url(../images/ic_repeat.svg) 50% 50% no-repeat;
+}
+
+.resend-code a span
+{
+	border-bottom: 1px solid #5A5652;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.resend-code a:hover span
+	{
+		border-color: transparent;
+	}
+}
 /*------------
     footer
 ------------*/
@@ -5507,6 +5659,30 @@ input[type=radio]:checked + .radio-dot__text::after
 	{
 		border-color: #5A5652;
 	}
+}
+
+.modal__icon
+{
+	height: 51px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 19px;
+}
+
+.modal__icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.modal-btn__login
+{
+	width: 100%;
 }
 
 @media (max-width: 1600px)

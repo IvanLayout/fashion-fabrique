@@ -653,4 +653,15 @@
 	{
 		width: 100%;
 	}
+
+
+	.modal .form__flex .form__line 
+	{
+		width: calc(100% / 1 - 10px);
+	}
+
+	.modal__bot-w
+	{
+		max-width: 100%;
+	}
 }
