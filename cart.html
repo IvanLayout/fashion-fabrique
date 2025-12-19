@@ -43,6 +43,12 @@
 		<div class="wrap wrap_cart">
 			<!-- Шапка -->
 			<header class="header">
+				<div class="header__top">
+					<div class="cont">
+						<div class="header__top-info">Каждую пятницу — новые поступления и сюрпризы</div>
+					</div>
+				</div>
+
 				<div class="cont">
 					<div class="header__flex _flex">
 						<button type="button" class="mob-menu-btn">
@@ -72,11 +78,39 @@
 							</a>
 						</div>
 
-						<a href="/" class="btn-search">
-							<svg>
-								<use xlink:href="images/sprite.svg#lupa"></use>
-							</svg>
-						</a>
+						<div class="mini-modal mini-modal_search">
+							<button type="button" class="btn-search mini-modal__btn">
+								<svg>
+									<use xlink:href="images/sprite.svg#lupa"></use>
+								</svg>
+							</button>
+
+							<div class="mini-modal__modal mini-modal__modal_search">
+								<form action="" class="form-search">
+									<div class="form-search__flex _flex">
+										<input type="text" value="" placeholder="Название, цвет, материал" id="search-input" class="form-search__input">
+
+										<button type="submit" class="form-search__submit">
+											<svg>
+												<use xlink:href="images/sprite.svg#lupa"></use>
+											</svg>
+										</button>
+									</div>
+
+									<div class="form-search__info">
+										<div class="form-search__item">
+											<a href="/">Шелковый топ</a>
+										</div>
+										<div class="form-search__item">
+											<a href="/">Шелковая блуза</a>
+										</div>
+										<div class="form-search__item">
+											<a href="/">Шелковое платье</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
 
 						<div class="header__btns _flex">
 							<a href="/" class="header__btn">
@@ -91,15 +125,370 @@
 									<use xlink:href="images/sprite.svg#favorite"></use>
 								</svg>
 							</a>
-							<a href="/" class="header__btn">
+
+							<button type="button" data-content="#modal-authorization" class="header__btn modal-btn">
 								<svg>
 									<use xlink:href="images/sprite.svg#user"></use>
 								</svg>
-							</a>
+							</button>
 						</div>
 					</div>
 				</div>
 			</header>
+
+			<div class="header-fix _flex">
+				<div class="header-fix__coll">
+					<button type="button" class="mob-menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
+					<div class="header-fix__socials">
+						<a href="/" class="header-fix__socials-item">
+							<img data-src="images/ic_soc3.svg" src="images/img_plug.png" alt="" class="lazyload">
+						</a>
+						<a href="/" class="header-fix__socials-item">
+							<img data-src="images/ic_soc4.svg" src="images/img_plug.png" alt="" class="lazyload">
+						</a>
+					</div>
+				</div>
+
+				<div class="menu-fix">
+					<div class="menu-fix__title">Каталог</div>
+
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sub">
+							Одежда
+
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow4"></use>
+							</svg>
+						</a>
+
+						<div class="menu-fix__sub">
+							<div class="menu-fix__title menu-fix__title_back">Одежда</div>
+
+							<div class="menu-fix__all">
+								<a href="/">Смотреть все</a>
+							</div>
+
+							<div class="menu-fix__items">
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Платья</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Топы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Майки и футболки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Блузы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Логсливы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитера и кардиганы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитшоты и худи</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Жилеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Пиджаки и жакеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Шорты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Юбки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Брюки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Джинсы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Костюмы и комлекты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Верхняя одежда</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sub">
+							Обувь
+
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow4"></use>
+							</svg>
+						</a>
+
+						<div class="menu-fix__sub">
+							<div class="menu-fix__title menu-fix__title_back">Обувь</div>
+
+							<div class="menu-fix__all">
+								<a href="/">Смотреть все</a>
+							</div>
+
+							<div class="menu-fix__items">
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Платья</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Топы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Майки и футболки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Блузы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Логсливы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитера и кардиганы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитшоты и худи</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Жилеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Пиджаки и жакеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Шорты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Юбки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Брюки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Джинсы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Костюмы и комлекты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Верхняя одежда</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sub">
+							Аксессуары
+
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow4"></use>
+							</svg>
+						</a>
+
+						<div class="menu-fix__sub">
+							<div class="menu-fix__title menu-fix__title_back">Аксессуары</div>
+
+							<div class="menu-fix__all">
+								<a href="/">Смотреть все</a>
+							</div>
+
+							<div class="menu-fix__items">
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Платья</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Топы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Майки и футболки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Блузы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Логсливы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитера и кардиганы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитшоты и худи</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Жилеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Пиджаки и жакеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Шорты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Юбки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Брюки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Джинсы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Костюмы и комлекты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Верхняя одежда</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sub">
+							Новые поступление
+
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow4"></use>
+							</svg>
+						</a>
+
+						<div class="menu-fix__sub">
+							<div class="menu-fix__title menu-fix__title_back">Новые поступление</div>
+
+							<div class="menu-fix__all">
+								<a href="/">Смотреть все</a>
+							</div>
+
+							<div class="menu-fix__items">
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Платья</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Топы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Майки и футболки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Блузы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Логсливы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитера и кардиганы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитшоты и худи</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Жилеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Пиджаки и жакеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Шорты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Юбки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Брюки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Джинсы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Костюмы и комлекты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Верхняя одежда</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sub">
+							Выбор покупателей
+
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow4"></use>
+							</svg>
+						</a>
+
+						<div class="menu-fix__sub">
+							<div class="menu-fix__title menu-fix__title_back">Выбор покупателей</div>
+
+							<div class="menu-fix__all">
+								<a href="/">Смотреть все</a>
+							</div>
+
+							<div class="menu-fix__items">
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Платья</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Топы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Майки и футболки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Блузы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Логсливы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитера и кардиганы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитшоты и худи</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Жилеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Пиджаки и жакеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Шорты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Юбки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Брюки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Джинсы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Костюмы и комлекты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Верхняя одежда</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sale">SALE</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="overlay-fix"></div>
 
 			<div class="btns-fix">
 				<a href="/" class="btns-fix__btn">
@@ -118,11 +507,11 @@
 						<use xlink:href="images/sprite.svg#favorite"></use>
 					</svg>
 				</a>
-				<a href="/" class="btns-fix__btn">
+				<button type="button" data-content="#modal-authorization" class="btns-fix__btn modal-btn">
 					<svg>
 						<use xlink:href="images/sprite.svg#user"></use>
 					</svg>
-				</a>
+				</button>
 			</div>
 			<!-- End Шапка -->
 
@@ -1174,38 +1563,288 @@
 			</footer>
 		</div>
 
-		<div id="modal-request" class="modal">
+		<div id="modal-authorization" class="modal">
 			<div class="modal__wrap">
-				<div class="modal__title">Оставить заявку</div>
+				<div class="modal__title">Авторизация</div>
 
-				<div class="modal__pad">
-					<form action="" class="form">
-						<div class="form__line">
-							<div class="form__field">
-								<input type="text" value="" placeholder="Как вас зовут?" class="form__input">
-							</div>
-						</div>
-						<div class="form__line">
-							<div class="form__field">
-								<input type="tel" value="" placeholder="+7 999 999-99-99" data-mask="+7 999 999-99-99" class="form__input">
-							</div>
-						</div>
-						<div class="checkbox checkbox_marg">
-							<label class="checkbox__label">
-								<input type="checkbox" name="">
+				<div class="tabs-container">
+					<div class="tabs tabs_marg _flex">
+						<button type="button" data-content="#tab-log1" data-level="level1" class="tabs__text tabs__button_js _active">
+							Телефон
+						</button>
+						<button type="button" data-content="#tab-log2" data-level="level1" class="tabs__text tabs__button_js">
+							Почта
+						</button>
+					</div>
 
-								<span class="checkbox__text">
-									Нажимая на кнопку, вы соглашаетесь на <a href="/" target="_blank">обработку <br>персональных данных</a> и с <a href="/" target="_blank">политикой конфиденциальности</a>
-								</span>
-							</label>
-						</div>
-						<div class="form__submit form__submit_marg">
-							<button type="submit" class="form__submit-btn btn-red">Оставить заявку</button>
-						</div>
-					</form>
+					<div class="tab-content level1 _active" id="tab-log1">
+						<form action="" data-content="#modal-enter-code" class="form form_marg form-ajax">
+							<div class="form__line">
+								<div class="form__field">
+									<input type="tel" value="" placeholder="+7" data-mask="+7 999 999-99-99" class="form__input">
+								</div>
+							</div>
+							
+							<div class="modal__bot">
+								<div class="checkbox">
+									<label class="checkbox__label">
+										<input type="checkbox" name="">
+			
+										<span class="checkbox__text">
+											нажимая кнопку вы соглашаетесь согласие <br>на <a href="/" target="_blank">обработку персональных данных</a>
+										</span>
+									</label>
+								</div>
+		
+								<div class="modal__btns">
+									<button type="submit" class="form__submit-btn btn-dark">Войти</button>
+		
+									<button type="button" data-content="#modal-registration" class="modal__btn modal-btn">Регистрация</button>
+								</div>
+								
+							</div>
+						</form>
+					</div>
+
+					<div class="tab-content level1" id="tab-log2">
+						<form action="" class="form form_marg">
+							<div class="form__line">
+								<div class="form__field">
+									<input type="email" value="" placeholder="E-mail" class="form__input">
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="form__field">
+									<input type="password" value="" placeholder="пароль" class="form__input">
+								</div>
+								<div class="form__bot">
+									<div class="form__bot-flex _flex">
+										<div class="error-text">Введен неверный логин или пароль</div>
+
+										<button type="button" data-content="#modal-forgot-password" class="modal-password modal-btn">Забыли пароль?</button>
+									</div>
+								</div>
+							</div>
+							
+							<div class="modal__bot">
+								<div class="checkbox">
+									<label class="checkbox__label">
+										<input type="checkbox" name="">
+			
+										<span class="checkbox__text">
+											нажимая кнопку вы соглашаетесь согласие <br>на <a href="/" target="_blank">обработку персональных данных</a>
+										</span>
+									</label>
+								</div>
+		
+								<div class="modal__btns">
+									<button type="submit" class="form__submit-btn btn-dark">Войти</button>
+		
+									<button type="button" data-content="#modal-registration" class="modal__btn modal-btn">Регистрация</button>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<div id="modal-forgot-password" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__title">Восстановление пароля</div>
+
+				<form action="" data-content="#modal-sent-letter" class="form form_marg form-ajax">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="email" value="" placeholder="E-mail" class="form__input">
+						</div>
+					</div>
+					
+					<div class="modal__bot">
+						<div class="checkbox">
+							<label class="checkbox__label">
+								<input type="checkbox" name="">
+	
+								<span class="checkbox__text">
+									нажимая кнопку вы соглашаетесь согласие <br>на <a href="/" target="_blank">обработку персональных данных</a>
+								</span>
+							</label>
+						</div>
+
+						<div class="modal__btns">
+							<button type="submit" class="form__submit-btn btn-dark">Войти</button>
+
+							<button type="button" data-content="#modal-registration" class="modal__btn modal-btn">Регистрация</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="modal-enter-code" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__title">Введите код из СМС</div>
+
+				<form action="" class="form form_marg">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" placeholder="Код" class="form__input">
+						</div>
+
+						<div class="form__bot">
+							<div class="form__bot-flex _flex">
+								<div class="">До отправки нового кода 2:00</div>
+
+								<div class="resend-code">
+									<a href="/" class="resend-code__link">
+										<span>отправить код повторно</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="modal__bot">
+						<div class="checkbox">
+							<label class="checkbox__label">
+								<input type="checkbox" name="">
+	
+								<span class="checkbox__text">
+									нажимая кнопку вы соглашаетесь согласие <br>на <a href="/" target="_blank">обработку персональных данных</a>
+								</span>
+							</label>
+						</div>
+
+						<div class="modal__btns">
+							<button type="submit" class="form__submit-btn btn-dark">Войти</button>
+
+							<button type="button" data-content="#modal-registration" class="modal__btn modal-btn">Регистрация</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="modal-new-password" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__title">Новый пароль</div>
+
+				<form action="" class="form form_marg">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="password" value="" placeholder="Новый пароль" class="form__input">
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="password" value="" placeholder="Повторите новый пароль" class="form__input">
+						</div>
+					</div>
+					
+					<div class="form__submit form__submit-marg2">
+						<button type="submit" class="form__submit-btn btn-dark">Сохранить пароль</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="modal-sent-letter" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__icon">
+					<img data-src="images/ic_send.svg" src="images/img_plug.png" alt="" class="lazyload">
+				</div>
+
+				<div class="modal__title">Мы отправили письмо с инструкцией по восстановлению пароля на ваш e-mail</div>
+
+				<div class="modal__btns">
+					<button type="button" data-content="#modal-authorization" class="modal-btn__login modal-btn btn-dark">Войти</button>
+
+					<button type="button" data-content="#modal-registration" class="modal__btn modal-btn">Регистрация</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-registration" class="modal modal-big">
+			<div class="modal__wrap">
+				<div class="modal__title">Регистрация</div>
+
+				<form action="" class="form form_marg">
+					<div class="form__flex _flex">
+						<div class="form__line">
+							<div class="form__field">
+								<input type="text" value="" placeholder="Фамилия" class="form__input">
+							</div>
+						</div>
+					</div>
+					<div class="form__flex _flex">
+						<div class="form__line">
+							<div class="form__field">
+								<input type="text" value="" placeholder="Имя" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="text" value="" placeholder="Отчество" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="email" value="" placeholder="E-mail" class="form__input error">
+							</div>
+
+							<div class="form__bot">
+								<div class="form__bot-flex _flex">
+									<div class="error-text">Данный E-mail уже зарегистрирован</div>
+
+									<button type="button" data-content="#modal-forgot-password" class="modal-password modal-btn">Забыли пароль?</button>
+								</div>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" value="" placeholder="+7 903 123 45 67" data-mask="+7 999 999-99-99" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="password" value="" placeholder="Пароль" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="password" value="" placeholder="Повторите пароль" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__filed" id="datepicker-here1">
+								<input type="text " value="" placeholder="Дата рождения" id="datepicker1" autocomplete="off" class="form__input datepicker">
+							</div>
+						</div>
+					</div>
+					
+					<div class="modal__bot modal__bot-w">
+						<div class="checkbox">
+							<label class="checkbox__label">
+								<input type="checkbox" name="">
+	
+								<span class="checkbox__text">
+									нажимая кнопку вы соглашаетесь согласие <br>на <a href="/" target="_blank">обработку персональных данных</a>
+								</span>
+							</label>
+						</div>
+
+						<div class="modal__btns">
+							<button type="submit" class="form__submit-btn btn-dark">Зарегистрироваться</button>
+
+							<button type="button" data-content="#modal-authorization" class="modal__btn modal-btn">Авторизация</button>
+						</div>
+						
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
 
 		<div class="supports-error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.

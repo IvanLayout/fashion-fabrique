@@ -42,7 +42,7 @@
 	<body>
 		<div class="wrap">
 			<!-- Шапка -->
-						<header class="header">
+			<header class="header">
 				<div class="header__top">
 					<div class="cont">
 						<div class="header__top-info">Каждую пятницу — новые поступления и сюрпризы</div>
@@ -78,11 +78,39 @@
 							</a>
 						</div>
 
-						<a href="/" class="btn-search">
-							<svg>
-								<use xlink:href="images/sprite.svg#lupa"></use>
-							</svg>
-						</a>
+						<div class="mini-modal mini-modal_search">
+							<button type="button" class="btn-search mini-modal__btn">
+								<svg>
+									<use xlink:href="images/sprite.svg#lupa"></use>
+								</svg>
+							</button>
+
+							<div class="mini-modal__modal mini-modal__modal_search">
+								<form action="" class="form-search">
+									<div class="form-search__flex _flex">
+										<input type="text" value="" placeholder="Название, цвет, материал" id="search-input" class="form-search__input">
+
+										<button type="submit" class="form-search__submit">
+											<svg>
+												<use xlink:href="images/sprite.svg#lupa"></use>
+											</svg>
+										</button>
+									</div>
+
+									<div class="form-search__info">
+										<div class="form-search__item">
+											<a href="/">Шелковый топ</a>
+										</div>
+										<div class="form-search__item">
+											<a href="/">Шелковая блуза</a>
+										</div>
+										<div class="form-search__item">
+											<a href="/">Шелковое платье</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
 
 						<div class="header__btns _flex">
 							<a href="/" class="header__btn">
@@ -97,11 +125,7 @@
 									<use xlink:href="images/sprite.svg#favorite"></use>
 								</svg>
 							</a>
-							<!-- <a href="/" class="header__btn">
-								<svg>
-									<use xlink:href="images/sprite.svg#user"></use>
-								</svg>
-							</a> -->
+
 							<button type="button" data-content="#modal-authorization" class="header__btn modal-btn">
 								<svg>
 									<use xlink:href="images/sprite.svg#user"></use>
@@ -111,6 +135,360 @@
 					</div>
 				</div>
 			</header>
+
+			<div class="header-fix _flex">
+				<div class="header-fix__coll">
+					<button type="button" class="mob-menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
+					<div class="header-fix__socials">
+						<a href="/" class="header-fix__socials-item">
+							<img data-src="images/ic_soc3.svg" src="images/img_plug.png" alt="" class="lazyload">
+						</a>
+						<a href="/" class="header-fix__socials-item">
+							<img data-src="images/ic_soc4.svg" src="images/img_plug.png" alt="" class="lazyload">
+						</a>
+					</div>
+				</div>
+
+				<div class="menu-fix">
+					<div class="menu-fix__title">Каталог</div>
+
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sub">
+							Одежда
+
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow4"></use>
+							</svg>
+						</a>
+
+						<div class="menu-fix__sub">
+							<div class="menu-fix__title menu-fix__title_back">Одежда</div>
+
+							<div class="menu-fix__all">
+								<a href="/">Смотреть все</a>
+							</div>
+
+							<div class="menu-fix__items">
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Платья</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Топы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Майки и футболки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Блузы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Логсливы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитера и кардиганы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитшоты и худи</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Жилеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Пиджаки и жакеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Шорты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Юбки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Брюки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Джинсы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Костюмы и комлекты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Верхняя одежда</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sub">
+							Обувь
+
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow4"></use>
+							</svg>
+						</a>
+
+						<div class="menu-fix__sub">
+							<div class="menu-fix__title menu-fix__title_back">Обувь</div>
+
+							<div class="menu-fix__all">
+								<a href="/">Смотреть все</a>
+							</div>
+
+							<div class="menu-fix__items">
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Платья</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Топы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Майки и футболки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Блузы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Логсливы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитера и кардиганы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитшоты и худи</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Жилеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Пиджаки и жакеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Шорты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Юбки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Брюки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Джинсы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Костюмы и комлекты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Верхняя одежда</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sub">
+							Аксессуары
+
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow4"></use>
+							</svg>
+						</a>
+
+						<div class="menu-fix__sub">
+							<div class="menu-fix__title menu-fix__title_back">Аксессуары</div>
+
+							<div class="menu-fix__all">
+								<a href="/">Смотреть все</a>
+							</div>
+
+							<div class="menu-fix__items">
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Платья</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Топы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Майки и футболки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Блузы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Логсливы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитера и кардиганы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитшоты и худи</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Жилеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Пиджаки и жакеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Шорты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Юбки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Брюки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Джинсы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Костюмы и комлекты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Верхняя одежда</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sub">
+							Новые поступление
+
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow4"></use>
+							</svg>
+						</a>
+
+						<div class="menu-fix__sub">
+							<div class="menu-fix__title menu-fix__title_back">Новые поступление</div>
+
+							<div class="menu-fix__all">
+								<a href="/">Смотреть все</a>
+							</div>
+
+							<div class="menu-fix__items">
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Платья</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Топы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Майки и футболки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Блузы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Логсливы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитера и кардиганы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитшоты и худи</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Жилеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Пиджаки и жакеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Шорты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Юбки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Брюки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Джинсы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Костюмы и комлекты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Верхняя одежда</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sub">
+							Выбор покупателей
+
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow4"></use>
+							</svg>
+						</a>
+
+						<div class="menu-fix__sub">
+							<div class="menu-fix__title menu-fix__title_back">Выбор покупателей</div>
+
+							<div class="menu-fix__all">
+								<a href="/">Смотреть все</a>
+							</div>
+
+							<div class="menu-fix__items">
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Платья</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Топы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Майки и футболки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Блузы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Логсливы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитера и кардиганы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Свитшоты и худи</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Жилеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Пиджаки и жакеты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Шорты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Юбки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Брюки</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Джинсы</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Костюмы и комлекты</a>
+								</div>
+								<div class="menu-fix__item">
+									<a href="/" class="menu-fix__link">Верхняя одежда</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu-fix__item">
+						<a href="/" class="menu-fix__link _sale">SALE</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="overlay-fix"></div>
 
 			<div class="btns-fix">
 				<a href="/" class="btns-fix__btn">
@@ -129,11 +507,11 @@
 						<use xlink:href="images/sprite.svg#favorite"></use>
 					</svg>
 				</a>
-				<a href="/" class="btns-fix__btn">
+				<button type="button" data-content="#modal-authorization" class="btns-fix__btn modal-btn">
 					<svg>
 						<use xlink:href="images/sprite.svg#user"></use>
 					</svg>
-				</a>
+				</button>
 			</div>
 			<!-- End Шапка -->
 

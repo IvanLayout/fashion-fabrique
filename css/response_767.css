@@ -655,6 +655,13 @@
 	}
 
 
+	.catalog-filter{
+		top: 51px;
+		left: -20px;
+		padding: 20px;
+		width: calc(100% + 40px);
+	}
+
 	.catalog-filter__item 
 	{
 		width: calc(100% / 2 - 15px);

@@ -17,27 +17,47 @@ $(() => {
 	})
 
 	boxes.forEach(element => observer.observe(element))
-	
-
-	// Установка ширины стандартного скроллбара
-	$(':root').css('--scroll_width', widthScroll() + 'px')
 
 	// Моб. меню
-	$('.mob-menu-btn').click((e) => {
+	$('body').on('click', '.mob-menu-btn', function(e) {
 		e.preventDefault()
 
-		$('.mob-menu-btn').toggleClass('_active')
-		$('body').toggleClass('_lock-add')
-		$('.header__wrap').toggleClass('_show')
+		if ( $(this).hasClass('_active') ){
+			$('.mob-menu-btn').removeClass('_active')
+			$('.header-fix').removeClass('_show')
+			$('body').removeClass('_lock-menu')
+			$('.overlay-fix').removeClass('_show')
+		} else{
+			$('.mob-menu-btn').addClass('_active')
+			$('.header-fix').addClass('_show')
+			$('body').addClass('_lock-menu')
+			$('.overlay-fix').addClass('_show')
+		}
 	})
 
-	$('.close-menu').click((e) => {
+	$('body').on('click', '.overlay-fix', function(e) {
 		e.preventDefault()
 
 		$('.mob-menu-btn').removeClass('_active')
-		$('body').removeClass('_lock-add')
-		$('.header__wrap').removeClass('_show')
+		$('.header-fix').removeClass('_show')
+		$('body').removeClass('_lock-menu')
+		$('.overlay-fix').removeClass('_show')
 	})
+
+	$('body').on('click', '.menu-fix__link._sub', function(e) {
+		e.preventDefault()
+
+		$(this).next().addClass('_show')
+		$('.menu-fix').addClass('_second')
+	})
+
+	$('body').on('click', '.menu-fix__title_back', function(e) {
+		e.preventDefault()
+
+		$('.menu-fix__sub').removeClass('_show')
+		$('.menu-fix').removeClass('_second')
+	})
+	
 
 	// Аккордион простой
 	$('body').on('click', '.accord__open', function(e) {
@@ -61,10 +81,12 @@ $(() => {
 		if ($(this).hasClass('_active')) {
 			$(this).removeClass('_active')
 
+			$(this).closest('.form__filed').find('.form__input').removeClass('_pad-input')
 			$(this).closest('.form__filed').find('.form__input').prop('disabled', true)
 		} else {
 			$(this).addClass('_active')
 
+			$(this).closest('.form__filed').find('.form__input').addClass('_pad-input')
 			$(this).closest('.form__filed').find('.form__input').prop('disabled', false)
 		}
     })
@@ -161,12 +183,35 @@ $(() => {
 	})
 
 	// Фильтр
-	$('.open-filter').click((e) => {
+	$('body').on('click', '.open-filter', function(e) {
 		e.preventDefault()
 
 		$('.open-filter').toggleClass('_active')
 		$('.catalog-filter').toggleClass('_show')
+		$('.filter-overlay').toggleClass('_show')
 	})
+
+	$('body').on('click', '.filter-overlay', function(e) {
+		e.preventDefault()
+
+		$('.open-filter').removeClass('_active')
+		$('.catalog-filter').removeClass('_show')
+		$('.filter-overlay').removeClass('_show')
+	})
+
+	$('body').on('click', '.catalog-filter__btn-clear', function(e) {
+		e.preventDefault()
+
+		$(this).closest('.catalog-filter__item').removeClass('_choice')
+
+		$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
+		$('body').removeClass('_lock-mini')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+
+		$(this).closest('.catalog-filter__item').find('input[type="checkbox"]').prop('checked', false)
+	})
+	
 
 	// Аккордион
 	$('body').on('click', '.accordion__title', function(e) {
@@ -280,28 +325,25 @@ $(() => {
 		$('.section-cart__details').removeClass('_active')
 		$('.section-cart__colr').removeClass('_show')
 	})
+
+
+	$('#search-input').on('input', function () {
+		if (  $(this).val().length > 0 ) {
+			$('.form-search__info').addClass('_show');
+		} else {
+			$('.form-search__info').removeClass('_show');
+		}
+	});
 })
 
-$(window).on('load', () => {
-	
-})
 
 // Вспомогательные функции
-const widthScroll = () => {
-	let div = document.createElement('div')
+const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
-	div.style.overflowY = 'scroll'
-	div.style.width = '50px'
-	div.style.height = '50px'
-	div.style.visibility = 'hidden'
-
-	document.body.appendChild(div)
-
-	let scrollWidth = div.offsetWidth - div.clientWidth
-	document.body.removeChild(div)
-
-	return scrollWidth
-}
+document.documentElement.style.setProperty(
+	"--scroll_width",
+	`${scrollbarWidth}px`
+);
 
 function setHeight(className){
     let maxheight = 0
