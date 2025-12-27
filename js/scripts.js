@@ -58,6 +58,11 @@ $(() => {
 		})
 	}
 
+	if ( $('.zoom').length && $(window).width() > 1024 ) {
+		//zooom
+		$('.zoom').zoom()
+	}
+
 	if ($('.products__slider').length) {
 		new Swiper('.products__slider', {
 			loop: false,
