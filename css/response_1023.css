@@ -335,6 +335,11 @@
 		height: calc(100% - 108px);
 	}
 
+	.section-cart__wrap-mob
+	{
+		width: 100%;
+	}
+
 	.section-cart__fix{
 		bottom: 48px;
 	}

@@ -42,6 +42,11 @@
 		top: 0;
 	}
 
+	.section-cart__wrap-mob
+	{
+		display: block;
+	}
+
 	.section-cart__imp{
 		position: fixed;
 		left: 0;

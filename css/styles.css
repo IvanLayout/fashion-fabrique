@@ -482,10 +482,8 @@ button
 .header
 {
 	position: sticky;
-    /* z-index: 99; */
     background: #fff;
 
-	/* position: relative; */
 	top: 0;
 	left: 0;
 
@@ -2980,6 +2978,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	position: sticky;
 	left: 0;
 	top: 20px;
+}
+
+.section-cart__wrap-mob
+{
+	display: none;
+	margin-top: 30px;
+	width: 50%;
 }
 
 .section-cart__imp{
