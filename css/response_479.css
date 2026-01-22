@@ -313,6 +313,11 @@
 		margin-left: 15px;
 	}
 
+	.history-table__price
+	{
+		font-size: 26px;
+	}
+
 	.content-lk .form .btn-dark
 	{
 		width: 100%;
