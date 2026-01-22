@@ -5469,6 +5469,11 @@ input[type=radio]:checked + .radio-dot__text::after
 	opacity: 1;
 }
 
+.personal-form .form__line-hide._hide
+{
+	display: none;
+}
+
 .personal-form .box_btn
 {
 	display: none;

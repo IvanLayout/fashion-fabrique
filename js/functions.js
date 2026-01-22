@@ -97,6 +97,7 @@ $(() => {
 
 		var parent = $(this).closest('.personal-form')
 
+		parent.find('.form__line-hide').addClass('_hide')
 		parent.find('.box_btn').addClass('_view')
 	})
 
