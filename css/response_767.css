@@ -266,10 +266,22 @@
 		margin-left: 40px;
 	}
 
+	.views__view svg{
+		display: none;
+	}
+
+	.views__view svg + svg{
+		display: block;
+	}
+
 	.products__grid {
 		--product-count: 3;
 		--product-marg: 14px;
 		margin-top: 22px;
+	}
+
+	.products__grid_one{
+		--product-count: 2;
 	}
 
 	.wrap-btn_marg{

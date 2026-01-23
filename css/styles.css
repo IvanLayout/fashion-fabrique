@@ -2495,7 +2495,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .magazine__name{
 	font-weight: 300;
-	font-size: 38px;
+	font-size: 34px;
 	color: #e8e6e2;
 	line-height: normal;
 	display: block;
@@ -2561,7 +2561,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .shop__name{
 	font-weight: 300;
-	font-size: 38px;
+	font-size: 34px;
 	color: #e8e6e2;
 	line-height: normal;
 	display: block;
@@ -3772,6 +3772,10 @@ input[type=radio]:checked + .point__wrap .point__btn span + span{
 	height: 16px;
 	width: 12px;
 	stroke: currentColor;
+}
+
+.views__view svg + svg{
+	display: none;
 }
 
 .views__view_2 svg{

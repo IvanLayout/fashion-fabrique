@@ -56,8 +56,16 @@
 		<path d="M11 1L11 15M6 1L6 15M1 1L1 15" stroke-width="2" stroke-linecap="round"/>
 	</symbol>
 
+	<symbol xmlns="http://www.w3.org/2000/svg" id="view1-mob" viewBox="0 0 12 16">
+		<path d="M6 1L6 15" stroke-width="2" stroke-linecap="round"/>
+	</symbol>
+
 	<symbol xmlns="http://www.w3.org/2000/svg" id="view2" viewBox="0 0 22 16">
 		<path d="M11 1L11 15M6 1L6 15M1 1L1 15M21 1V15M16 1L16 15" stroke-width="2" stroke-linecap="round"/>
+	</symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" id="view2-mob" viewBox="0 0 22 16">
+		<path d="M13.5 1L13.5 15M8.5 1L8.5 15" stroke-width="2" stroke-linecap="round"/>
 	</symbol>
 
 	<symbol xmlns="http://www.w3.org/2000/svg" id="edit" viewBox="0 0 15 15">
