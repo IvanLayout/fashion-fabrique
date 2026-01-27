@@ -63,6 +63,31 @@ $(() => {
 		$('.zoom').zoom()
 	}
 
+	
+	if ($('.one-slider').length) {
+		new Swiper('.one-slider', {
+			loop: true,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 20,
+			slidesPerView: 1,
+			preloadImages: false,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false
+			},
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+		})
+	}
+
+
 	if ($('.products__slider').length) {
 		new Swiper('.products__slider', {
 			loop: false,
