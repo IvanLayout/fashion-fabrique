@@ -566,6 +566,18 @@
 	{
 		max-width: 100%;
 	}
+
+	.content-lk__number{
+		display: block;
+		width: 33px;
+		line-height: 27px;
+		padding-top: 10px;
+		font-size: 14px;
+		color: #121212;
+		background: url(../images/ic-cart-big.svg) 50% no-repeat;
+		margin-right: 9px;
+		text-align: center;
+	}
 	
 
 	.lk-bonus

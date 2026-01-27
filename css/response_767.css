@@ -104,6 +104,10 @@
 		font-weight: 400;
 	}
 
+	.lk-width .cart-table__name{
+		font-weight: 300;
+	}
+
 	.cart-table__name br{
 		display: none;
 	}
@@ -130,6 +134,7 @@
 	}
 
 	.cart-table__price{
+		font-weight: 300;
 		font-size: 18px;
 	}
 
@@ -526,6 +531,14 @@
 		padding-bottom: 20px;
 	}
 
+	.content-lk__top-between{
+		justify-content: space-between;
+	}
+
+	.content-lk__top-between .main-title{
+		margin-right: auto;
+	}
+
 	.content-lk__date
 	{
 		width: 100%;
@@ -568,7 +581,13 @@
 
 	.content-lk .cart-table__price
 	{
-		font-size: 28px;
+		/* font-size: 28px; */
+		font-weight: 400;
+	}
+
+	.content-lk__val-product{
+		font-size: 12px;
+		margin-left: 10px;
 	}
 
 
